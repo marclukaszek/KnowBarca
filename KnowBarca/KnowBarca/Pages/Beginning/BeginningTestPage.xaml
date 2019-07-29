@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:input="clr-namespace:Plugin.InputKit.Shared.Controls;assembly=Plugin.InputKit"
+             mc:Ignorable="d"
+             x:Class="KnowBarca.Pages.BeginningTestPage"
+             NavigationPage.HasNavigationBar="False">
+    <Grid>
+        <Image x:Name="background"
+           Aspect="Fill" />
+        <Frame Margin="10,5,10,5"
+               IsClippedToBounds="False"
+               BorderColor="Black"
+               HasShadow="True"
+               CornerRadius="30"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="CenterAndExpand"
+               IsVisible="True"
+               x:Name="Pyt1">
+            <StackLayout VerticalOptions="StartAndExpand"
+                     Padding="5"
+                     BackgroundColor="Gray">
+                <Label Text="Początki - Test"
+                   FontAttributes="Bold"
+                   FontSize="Large"
+                   TextColor="White"
+                   Opacity="1"
+                   />
+                <StackLayout VerticalOptions="Start">
+                    <Label Margin="5,5,5,5"
+                   Opacity="1"
+                   Text="Kto jest założycielem FC Barcelony?"
+                   TextColor="White"/>
+                    <input:CheckBox Text="Hans Gamper" 
+                                    TextColor="White"
+                                    x:Name="correct"
+                                    
+                                    />
+                    <input:CheckBox Text="Santiago Bernabeu"
+                                    TextColor="White"
+                                    x:Name="wrong1"/>
+                    <input:CheckBox Text="Vincente Calderon"
+                                    TextColor="White"
+                                    x:Name="wrong2"/>
+                </StackLayout>
+                <Button Text="Następne pytanie ->"
+                        HorizontalOptions="End"
+                        Clicked="StartPyt2_Clicked"/>
+            </StackLayout>
+        </Frame>
+        <Frame Margin="10,5,10,5"
+               IsClippedToBounds="False"
+               BorderColor="Black"
+               HasShadow="True"
+               CornerRadius="30"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="CenterAndExpand"
+               IsVisible="False"
+               x:Name="Pyt2">
+            <StackLayout VerticalOptions="StartAndExpand"
+                     Padding="5"
+                     BackgroundColor="Gray">
+                <Label Text="Początki - Test"
+                   FontAttributes="Bold"
+                   FontSize="Large"
+                   TextColor="White"
+                   Opacity="1"
+                   />
+                <StackLayout VerticalOptions="Start">
+                    <Label Margin="5,5,5,5"
+                   Opacity="1"
+                   Text="W którym roku założona została FC Barcelona"
+                   TextColor="White"/>
+                    <input:CheckBox Text="1890 r." 
+                                    TextColor="White"
+                                    x:Name="Pyt2w"
+                                    
+                                    />
+                    <input:CheckBox Text="1888 r."
+                                    TextColor="White"
+                                    x:Name="Pyt2ww"/>
+                    <input:CheckBox Text="1889 r."
+                                    TextColor="White"
+                                    x:Name="Pyt2c"/>
+                </StackLayout>
+                <Button Text="Następne pytanie ->"
+                        HorizontalOptions="End"
+                        Clicked="StartPyt3_Clicked"/>
+            </StackLayout>
+        </Frame>
+        <Frame Margin="10,5,10,5"
+               IsClippedToBounds="False"
+               BorderColor="Black"
+               HasShadow="True"
+               CornerRadius="30"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="CenterAndExpand"
+               IsVisible="False"
+               x:Name="Pyt3">
+            <StackLayout VerticalOptions="StartAndExpand"
+                     Padding="5"
+                     BackgroundColor="Gray">
+                <Label Text="Początki - Test"
+                   FontAttributes="Bold"
+                   FontSize="Large"
+                   TextColor="White"
+                   Opacity="1"
+                   />
+                <StackLayout VerticalOptions="Start">
+                    <Label Margin="5,5,5,5"
+                   Opacity="1"
+                   Text="Jakie wydarzenie zainicjowało powstanie klubu"
+                   TextColor="White"/>
+                    <input:CheckBox Text="Spotkanie znajomych" 
+                                    TextColor="White"
+                                    x:Name="Pyt3w"
+                                    />
+                    <input:CheckBox Text="Ogłoszenie w gazecie"
+                                    TextColor="White"
+                                    x:Name="Pyt3c"/>
+                    <input:CheckBox Text="Zgłoszenie klubu w siedzibie ligi"
+                                    TextColor="White"
+                                    x:Name="Pyt3ww"/>
+                </StackLayout>
+                <Button Text="Sprawdź odpowiedzi"
+                        HorizontalOptions="End"
+                        Clicked="Check_Clicked"/>
+            </StackLayout>
+        </Frame>
+    </Grid>
+</ContentPage>

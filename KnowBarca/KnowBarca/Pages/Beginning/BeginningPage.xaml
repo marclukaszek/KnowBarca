@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="KnowBarca.Pages.BeginningPage"
+             NavigationPage.HasNavigationBar="False">
+    <Grid>
+        <Image x:Name="background"
+           Aspect="Fill" />
+        <Frame Margin="10,5,10,5"
+               IsClippedToBounds="False"
+               BorderColor="Black"
+               HasShadow="True"
+               CornerRadius="30"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="CenterAndExpand">
+            <StackLayout VerticalOptions="StartAndExpand"
+                     Padding="5"
+                     BackgroundColor="Gray">
+                <Label x:Name="Wrong"
+                       Text="Bład! Spróbuj jeszcze raz!"
+                       IsVisible="False"/>
+                <Label Text="1. Początki"
+                   FontAttributes="Bold"
+                   FontSize="Large"
+                   TextColor="White"
+                   Opacity="1"
+                   />
+            <StackLayout Grid.Column="0"
+                         Grid.Row="0">
+            <Image x:Name="Barca1903"
+                   Margin="5,0,5,0"
+                   Opacity="1"
+                   />
+            </StackLayout>
+            <Label Margin="5,5,5,5"
+                   Opacity="1"
+                   Text="    Szwacjacrski biznesmen Hans Gamper, urodzony w Winterthur 22 listopada 1877 roku, był człowiekiem, który zdecydował się założyć klub piłkarski FC Barcelona, a pierwszym ruchem w tym kierunku było umieszczenie ogłoszenia w lokalnej gazecie 22 października 1899 roku, w którym ogłosił nabór chętnych zawodników.
+Hans Gamper, znany w Katalonii jako Joan, przeprowadził sie do Barcelony w 1898 roku ze względu na prowadzone interesy. Co ciekawe, zaledwie w miesiąc po umieszczeniu swojego ogłoszenia, 29 listopada 1899 roku przewodniczył pierwszemu posiedzeniu władz klubu w Gimnas Sole. Gualteri Wild, Lluís d'Ossó, Bartomeu Terradas, Otto Kunzle, Otto Maier, Enric Ducal, Pere Cabot, Carles Pujol, Josep Llobet, John Parsons oraz William Parsons, wraz z Gamperem byli członkami tego historycznego zgromadzenia. Spotkanie ukonstytuowało statut Klubu, a Anglik Gualteri Wild został pierwszym prezydentem, łącząc sprawowanie tej ważnej funkcji z występami na boisku, gdyż podobnie jak pozostali założyciele, był przede wszystkim piłkarzem."
+                   TextColor="White"/>
+                <Button Text="TEST"
+                       HorizontalOptions="Center"
+                       VerticalOptions="End"
+                       FontSize="Medium"
+                       TextColor="BlueViolet"
+                        Clicked="BeginningTest_Clicked"
+                       ></Button>
+        </StackLayout>
+        </Frame>
+    </Grid>
+</ContentPage>
