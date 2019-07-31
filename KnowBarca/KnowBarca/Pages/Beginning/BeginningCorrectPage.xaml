@@ -25,13 +25,6 @@
                    TextColor="White"
                    Opacity="1"
                    />
-                <StackLayout Grid.Column="0"
-                         Grid.Row="0">
-                    <Image x:Name="Barca1903"
-                   Margin="5,0,5,0"
-                   Opacity="1"
-                   />
-                </StackLayout>
                 <Label Margin="5,5,5,5"
                    Opacity="1"
                    Text="Brawo! Wszystkie odpowiedzi są poprawne!"

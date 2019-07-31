@@ -18,5 +18,10 @@ namespace KnowBarca.Pages.Stadium
             InitializeComponent();
             background.Source = ImageSource.FromResource("KnowBarca.Images.Background.png");
         }
+
+        async void Test_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new StadiumTestPage());
+        }
     }
 }

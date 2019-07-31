@@ -73,6 +73,7 @@
                        VerticalOptions="End"
                        FontSize="Medium"
                        TextColor="BlueViolet"
+                       Clicked="Test_Clicked"
                        ></Button>
                 
             </StackLayout>
