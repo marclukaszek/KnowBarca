@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="KnowBarca.Pages.CrestAndColors.CrestAndColorsTestPage" 
+             NavigationPage.HasNavigationBar="False"
+             xmlns:input="clr-namespace:Plugin.InputKit.Shared.Controls;assembly=Plugin.InputKit"
+             >
+    <Grid>
+        <Image x:Name="background"
+           Aspect="Fill" />
+        <Frame Margin="10,5,10,5"
+               IsClippedToBounds="False"
+               BorderColor="Black"
+               HasShadow="True"
+               CornerRadius="30"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="CenterAndExpand"
+               IsVisible="True"
+               x:Name="Pyt1">
+            <StackLayout VerticalOptions="StartAndExpand"
+                     Padding="5"
+                     BackgroundColor="Gray">
+                <Label Text="Stadiony - Test"
+                   FontAttributes="Bold"
+                   FontSize="Large"
+                   TextColor="White"
+                   Opacity="1"
+                   />
+                <StackLayout VerticalOptions="Start">
+                    <Label Margin="5,5,5,5"
+                   Opacity="1"
+                   Text="Jakiego kształtu były pierwszy herb FCB?"
+                   TextColor="White"/>
+                    <input:CheckBox Text="Dzbana" 
+                                    TextColor="White"
+                                    x:Name="wrong1"/>
+                    <input:CheckBox Text="Tarczy"
+                                    TextColor="White"
+                                    x:Name="wrong2"/>
+                    <input:CheckBox Text="Rombu"
+                                    TextColor="White"
+                                    x:Name="correct"/>
+                </StackLayout>
+                <Button Text="Następne pytanie ->"
+                        HorizontalOptions="End"
+                        Clicked="StartPyt2_Clicked"/>
+            </StackLayout>
+        </Frame>
+        <Frame Margin="10,5,10,5"
+               IsClippedToBounds="False"
+               BorderColor="Black"
+               HasShadow="True"
+               CornerRadius="30"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="CenterAndExpand"
+               IsVisible="False"
+               x:Name="Pyt2">
+            <StackLayout VerticalOptions="StartAndExpand"
+                     Padding="5"
+                     BackgroundColor="Gray">
+                <Label Text="Stadiony - Test"
+                   FontAttributes="Bold"
+                   FontSize="Large"
+                   TextColor="White"
+                   Opacity="1"
+                   />
+                <StackLayout VerticalOptions="Start">
+                    <Label Margin="5,5,5,5"
+                   Opacity="1"
+                   Text="W którym roku napis FCB na herbie został zmieniony?"
+                   TextColor="White"/>
+                    <input:CheckBox Text="1974 r." 
+                                    TextColor="White"
+                                    x:Name="Pyt2w" />
+                    <input:CheckBox Text="1939 r."
+                                    TextColor="White"
+                                    x:Name="Pyt2c"/>
+                    <input:CheckBox Text="1954 r."
+                                    TextColor="White"
+                                    x:Name="Pyt2ww"/>
+                </StackLayout>
+                <Button Text="Następne pytanie ->"
+                        HorizontalOptions="End"
+                        Clicked="StartPyt3_Clicked"/>
+            </StackLayout>
+        </Frame>
+        <Frame Margin="10,5,10,5"
+               IsClippedToBounds="False"
+               BorderColor="Black"
+               HasShadow="True"
+               CornerRadius="30"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="CenterAndExpand"
+               IsVisible="False"
+               x:Name="Pyt3">
+            <StackLayout VerticalOptions="StartAndExpand"
+                     Padding="5"
+                     BackgroundColor="Gray">
+                <Label Text="Stadiony - Test"
+                   FontAttributes="Bold"
+                   FontSize="Large"
+                   TextColor="White"
+                   Opacity="1"
+                   />
+                <StackLayout VerticalOptions="Start">
+                    <Label Margin="5,5,5,5"
+                   Opacity="1"
+                   Text="Jaki był kolor koszulek w którym Barca rozegrała pierwsze 10 sezonów?"
+                   TextColor="White"/>
+                    <input:CheckBox Text="Biały" 
+                                    TextColor="White"
+                                    x:Name="Pyt3c"
+                                    />
+                    <input:CheckBox Text="Czarny"
+                                    TextColor="White"
+                                    x:Name="Pyt3ww"/>
+                    <input:CheckBox Text="Niebieski"
+                                    TextColor="White"
+                                    x:Name="Pyt3w"/>
+                </StackLayout>
+                <Button Text="Sprawdź odpowiedzi"
+                        HorizontalOptions="End"
+                        Clicked="Check_Clicked"/>
+            </StackLayout>
+        </Frame>
+    </Grid>
+</ContentPage>

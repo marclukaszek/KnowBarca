@@ -14,6 +14,8 @@
     <None Remove="Images\author.jpg" />
     <None Remove="Images\Background.png" />
     <None Remove="Images\Barca1903.jpg" />
+    <None Remove="Images\copa.jpg" />
+    <None Remove="Images\herb.png" />
     <None Remove="Images\knowbarca.png" />
   </ItemGroup>
 
@@ -21,6 +23,8 @@
     <EmbeddedResource Include="Images\author.jpg" />
     <EmbeddedResource Include="Images\Background.png" />
     <EmbeddedResource Include="Images\Barca1903.jpg" />
+    <EmbeddedResource Include="Images\copa.jpg" />
+    <EmbeddedResource Include="Images\herb.png" />
     <EmbeddedResource Include="Images\knowbarca.png" />
   </ItemGroup>
 
@@ -49,6 +53,15 @@
     <EmbeddedResource Update="Pages\Beginning\BeginningTestPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="Pages\CrestAndColors\CrestAndColorsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Pages\CrestAndColors\CrestAndColorsTestPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Pages\CrestAndColors\CrestAndColorsCorrectPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Pages\Stadium\StadiumCorrectPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -56,6 +69,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Pages\Stadium\StadiumTestPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Pages\Trophies\TrophiesPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

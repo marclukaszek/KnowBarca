@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using KnowBarca.Pages.CrestAndColors;
 
 namespace KnowBarca.Pages.Stadium
 {
@@ -18,9 +19,9 @@ namespace KnowBarca.Pages.Stadium
             background.Source = ImageSource.FromResource("KnowBarca.Images.Background.png");
         }
 
-        private void CrestAndColors_Clicked(object sender, EventArgs e)
+        async void CrestAndColors_Clicked(object sender, EventArgs e)
         {
-
+            await Navigation.PushAsync(new CrestAndColorsPage());
         }
     }
 }
