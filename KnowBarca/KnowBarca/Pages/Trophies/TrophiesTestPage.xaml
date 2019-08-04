@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:input="clr-namespace:Plugin.InputKit.Shared.Controls;assembly=Plugin.InputKit"
+             mc:Ignorable="d"
+             x:Class="KnowBarca.Pages.Trophies.TrophiesTestPage" 
+             NavigationPage.HasNavigationBar="False"
+             >
+    <Grid>
+        <Image x:Name="background"
+           Aspect="Fill" />
+        <Frame Margin="10,5,10,5"
+               IsClippedToBounds="False"
+               BorderColor="Black"
+               HasShadow="True"
+               CornerRadius="30"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="CenterAndExpand"
+               IsVisible="True"
+               x:Name="Pyt1">
+            <StackLayout VerticalOptions="StartAndExpand"
+                     Padding="5"
+                     BackgroundColor="Gray">
+                <Label Text="Trofea - Test"
+                   FontAttributes="Bold"
+                   FontSize="Large"
+                   TextColor="White"
+                   Opacity="1"
+                   />
+                <StackLayout VerticalOptions="Start">
+                    <Label Margin="5,5,5,5"
+                   Opacity="1"
+                   Text="Ile razy FC Barcelona wygrała Klubowe Mistrzostwa Świata?"
+                   TextColor="White"/>
+                    <input:CheckBox Text="3 razy" 
+                                    TextColor="White"
+                                    x:Name="correct"/>
+                    <input:CheckBox Text="4 razy"
+                                    TextColor="White"
+                                    x:Name="wrong1"/>
+                    <input:CheckBox Text="5 razy"
+                                    TextColor="White"
+                                    x:Name="wrong2"/>
+                </StackLayout>
+                <Button Text="Następne pytanie ->"
+                        HorizontalOptions="End"
+                        Clicked="StartPyt2_Clicked"/>
+            </StackLayout>
+        </Frame>
+        <Frame Margin="10,5,10,5"
+               IsClippedToBounds="False"
+               BorderColor="Black"
+               HasShadow="True"
+               CornerRadius="30"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="CenterAndExpand"
+               IsVisible="False"
+               x:Name="Pyt2">
+            <StackLayout VerticalOptions="StartAndExpand"
+                     Padding="5"
+                     BackgroundColor="Gray">
+                <Label Text="Trofea - Test"
+                   FontAttributes="Bold"
+                   FontSize="Large"
+                   TextColor="White"
+                   Opacity="1"
+                   />
+                <StackLayout VerticalOptions="Start">
+                    <Label Margin="5,5,5,5"
+                   Opacity="1"
+                   Text="W którym z europejskich miast Barca po raz ostatni wygrała Ligę Mistrzów?"
+                   TextColor="White"/>
+                    <input:CheckBox Text="Londynie" 
+                                    TextColor="White"
+                                    x:Name="Pyt2w" />
+                    <input:CheckBox Text="Berlinie"
+                                    TextColor="White"
+                                    x:Name="Pyt2c"/>
+                    <input:CheckBox Text="Rzymie"
+                                    TextColor="White"
+                                    x:Name="Pyt2ww"/>
+                </StackLayout>
+                <Button Text="Następne pytanie ->"
+                        HorizontalOptions="End"
+                        Clicked="StartPyt3_Clicked"/>
+            </StackLayout>
+        </Frame>
+        <Frame Margin="10,5,10,5"
+               IsClippedToBounds="False"
+               BorderColor="Black"
+               HasShadow="True"
+               CornerRadius="30"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="CenterAndExpand"
+               IsVisible="False"
+               x:Name="Pyt3">
+            <StackLayout VerticalOptions="StartAndExpand"
+                     Padding="5"
+                     BackgroundColor="Gray">
+                <Label Text="Trofea - Test"
+                   FontAttributes="Bold"
+                   FontSize="Large"
+                   TextColor="White"
+                   Opacity="1"
+                   />
+                <StackLayout VerticalOptions="Start">
+                    <Label Margin="5,5,5,5"
+                   Opacity="1"
+                   Text="W którym roku Barca po raz pierwszy zwycięzyła w rozgrywkach Ligi Mistrzów?"
+                   TextColor="White"/>
+                    <input:CheckBox Text="1990" 
+                                    TextColor="White"
+                                    x:Name="Pyt3w"
+                                    />
+                    <input:CheckBox Text="1992"
+                                    TextColor="White"
+                                    x:Name="Pyt3c"/>
+                    <input:CheckBox Text="1988"
+                                    TextColor="White"
+                                    x:Name="Pyt3ww"/>
+                </StackLayout>
+                <Button Text="Sprawdź odpowiedzi"
+                        HorizontalOptions="End"
+                        Clicked="Check_Clicked"/>
+            </StackLayout>
+        </Frame>
+    </Grid>
+</ContentPage>

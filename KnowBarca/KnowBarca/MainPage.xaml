@@ -15,7 +15,11 @@
         <StackLayout VerticalOptions="CenterAndExpand">
             <Image x:Name="logo"
                    Aspect="AspectFit"/>
-            <Button Text="PLAY" 
+            <Button Text="Poznaj historię" 
+                VerticalOptions="Center"
+                HorizontalOptions="CenterAndExpand"
+                Clicked="History_Clicked"/>
+            <Button Text="Quiz" 
                 VerticalOptions="Center"
                 HorizontalOptions="CenterAndExpand"
                 Clicked="Play_Clicked"/>

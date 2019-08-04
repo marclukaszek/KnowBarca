@@ -23,3 +23,10 @@ C:\Users\Marcin\source\repos\KnowBarca\KnowBarca\KnowBarca\obj\Debug\netstandard
 C:\Users\Marcin\source\repos\KnowBarca\KnowBarca\KnowBarca\obj\Debug\netstandard2.0\KnowBarca.pdb
 C:\Users\Marcin\source\repos\KnowBarca\KnowBarca\KnowBarca\obj\Debug\netstandard2.0\KnowBarca.csprojAssemblyReference.cache
 C:\Users\Marcin\source\repos\KnowBarca\KnowBarca\KnowBarca\obj\Debug\netstandard2.0\Pages\Trophies\TrophiesPage.xaml.g.cs
+C:\Users\Marcin\source\repos\KnowBarca\KnowBarca\KnowBarca\obj\Debug\netstandard2.0\Pages\Trophies\TrophiesCorrectPage.xaml.g.cs
+C:\Users\Marcin\source\repos\KnowBarca\KnowBarca\KnowBarca\obj\Debug\netstandard2.0\Pages\Trophies\TrophiesTestPage.xaml.g.cs
+C:\Users\Marcin\source\repos\KnowBarca\KnowBarca\KnowBarca\obj\Debug\netstandard2.0\Pages\Transfers\TransfersPage.xaml.g.cs
+C:\Users\Marcin\source\repos\KnowBarca\KnowBarca\KnowBarca\obj\Debug\netstandard2.0\Pages\Transfers\TransfersCorrectPage.xaml.g.cs
+C:\Users\Marcin\source\repos\KnowBarca\KnowBarca\KnowBarca\obj\Debug\netstandard2.0\Pages\Transfers\TransfersTestPage.xaml.g.cs
+C:\Users\Marcin\source\repos\KnowBarca\KnowBarca\KnowBarca\obj\Debug\netstandard2.0\Pages\HistoryPage.xaml.g.cs
+C:\Users\Marcin\source\repos\KnowBarca\KnowBarca\KnowBarca\obj\Debug\netstandard2.0\Pages\Quiz\QuizPage.xaml.g.cs

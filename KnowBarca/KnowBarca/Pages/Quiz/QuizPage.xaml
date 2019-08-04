@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="KnowBarca.Pages.Quiz.QuizPage"
+             NavigationPage.HasNavigationBar="False"
+             xmlns:input="clr-namespace:Plugin.InputKit.Shared.Controls;assembly=Plugin.InputKit"
+             >
+    <Grid>
+        <Image x:Name="background"
+           Aspect="Fill" />
+        <ScrollView>
+        <StackLayout>
+        <Frame Margin="10,5,10,5"
+               IsClippedToBounds="False"
+               BorderColor="Black"
+               HasShadow="True"
+               CornerRadius="30"
+               BackgroundColor="#edbb00"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="CenterAndExpand"
+               IsVisible="True"
+               x:Name="Pyt1">
+                    <StackLayout VerticalOptions="StartAndExpand"
+                     Padding="5"
+                     BackgroundColor="White"
+                                 >
+                        <StackLayout VerticalOptions="Start">
+                    <Label Margin="5,5,5,5"
+                   Opacity="1"
+                   Text="Do którego z klubów przeniósł się za 42,5 mln € Alexis Sanchez?"
+                   TextColor="Black" FontAttributes="Bold"
+                   />
+                    <input:CheckBox Text="Manchester United F.C." 
+                                    TextColor="Black"
+                                    x:Name="w1"/>
+                    <input:CheckBox Text="Udinese Calcio"
+                                    TextColor="Black"
+                                    x:Name="ww1"/>
+                    <input:CheckBox Text="Arsenal F.C."
+                                    TextColor="Black"
+                                    x:Name="c1"/>
+                </StackLayout>
+            </StackLayout>
+        </Frame>
+                <Frame Margin="10,5,10,5"
+               IsClippedToBounds="False"
+               BorderColor="Black"
+               HasShadow="True"
+               CornerRadius="30"
+               BackgroundColor="#edbb00"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="CenterAndExpand"
+               IsVisible="True"
+               x:Name="Pyt2">
+                    <StackLayout VerticalOptions="StartAndExpand"
+                     Padding="5"
+                     BackgroundColor="White"
+                                 >
+                        <StackLayout VerticalOptions="Start">
+                    <Label Margin="5,5,5,5"
+                   Opacity="1"
+                   Text="Jaką kwotę otrzymałą Barcelona od Realu Madryt za transfer Luisa Figo?"
+                   TextColor="Black" FontAttributes="Bold"/>
+                    <input:CheckBox Text="60 mln €" 
+                                    TextColor="Black"
+                                    x:Name="c2" />
+                            <input:CheckBox Text="69 mln €"
+                                    TextColor="Black"
+                                    x:Name="w2" />
+                            <input:CheckBox Text="68 mln €"
+                                    TextColor="Black"
+                                    x:Name="ww2" />
+                        </StackLayout>
+            </StackLayout>
+        </Frame>
+                <Frame Margin="10,5,10,5"
+               IsClippedToBounds="False"
+               BorderColor="Black"
+               HasShadow="True"
+               CornerRadius="30"
+               BackgroundColor="#edbb00"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="CenterAndExpand"
+               IsVisible="True"
+               x:Name="Pyt3">
+                    <StackLayout VerticalOptions="StartAndExpand"
+                     Padding="5"
+                     BackgroundColor="White"
+                                 >
+                        <StackLayout VerticalOptions="Start">
+                    <Label Margin="5,5,5,5"
+                   Opacity="1"
+                   Text="Który z zawodników był najdroższym z transferów FCB?"
+                   TextColor="Black" FontAttributes="Bold"/>
+                    <input:CheckBox Text="O. Dembele" 
+                                    TextColor="Black"
+                                    x:Name="w3"
+                                    />
+                    <input:CheckBox Text="A. Griezmann"
+                                    TextColor="Black"
+                                    x:Name="ww3"/>
+                    <input:CheckBox Text="P. Couthinho"
+                                    TextColor="Black"
+                                    x:Name="c3"/>
+                </StackLayout>
+                        
+                    </StackLayout>
+        </Frame>
+                <Button Text="Sprawdź odpowiedzi"
+                                Clicked="QuizSolved" 
+                        Margin="10,0,10,5"
+                        BackgroundColor="#edbb00"
+                        BorderColor="White"
+                        BorderWidth="5"
+                        CornerRadius="5"/>
+            </StackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>

@@ -23,7 +23,7 @@
             <StackLayout VerticalOptions="StartAndExpand"
                      Padding="5"
                      BackgroundColor="Gray">
-                <Label Text="Stadiony - Test"
+                <Label Text="Herb i barwy - Test"
                    FontAttributes="Bold"
                    FontSize="Large"
                    TextColor="White"
@@ -61,7 +61,7 @@
             <StackLayout VerticalOptions="StartAndExpand"
                      Padding="5"
                      BackgroundColor="Gray">
-                <Label Text="Stadiony - Test"
+                <Label Text="Herb i barwy - Test"
                    FontAttributes="Bold"
                    FontSize="Large"
                    TextColor="White"
@@ -99,7 +99,7 @@
             <StackLayout VerticalOptions="StartAndExpand"
                      Padding="5"
                      BackgroundColor="Gray">
-                <Label Text="Stadiony - Test"
+                <Label Text="Herb i barwy - Test"
                    FontAttributes="Bold"
                    FontSize="Large"
                    TextColor="White"

@@ -18,5 +18,10 @@ namespace KnowBarca.Pages.Trophies
             copa.Source = ImageSource.FromResource("KnowBarca.Images.copa.jpg");
             background.Source = ImageSource.FromResource("KnowBarca.Images.Background.png");
         }
+
+        async void TrophiesTest_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new TrophiesTestPage());
+        }
     }
 }
