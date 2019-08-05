@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Marcin\\source\\repos\\KnowBarca\\KnowBarca\\KnowBarca\\KnowBarca.csproj": {}
+    "C:\\Users\\admttclukaszek\\Source\\Repos\\marclukaszek\\KnowBarca\\KnowBarca\\KnowBarca\\KnowBarca.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Marcin\\source\\repos\\KnowBarca\\KnowBarca\\KnowBarca\\KnowBarca.csproj": {
+    "C:\\Users\\admttclukaszek\\Source\\Repos\\marclukaszek\\KnowBarca\\KnowBarca\\KnowBarca\\KnowBarca.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Marcin\\source\\repos\\KnowBarca\\KnowBarca\\KnowBarca\\KnowBarca.csproj",
+        "projectUniqueName": "C:\\Users\\admttclukaszek\\Source\\Repos\\marclukaszek\\KnowBarca\\KnowBarca\\KnowBarca\\KnowBarca.csproj",
         "projectName": "KnowBarca",
-        "projectPath": "C:\\Users\\Marcin\\source\\repos\\KnowBarca\\KnowBarca\\KnowBarca\\KnowBarca.csproj",
-        "packagesPath": "C:\\Users\\Marcin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Marcin\\source\\repos\\KnowBarca\\KnowBarca\\KnowBarca\\obj\\",
+        "projectPath": "C:\\Users\\admttclukaszek\\Source\\Repos\\marclukaszek\\KnowBarca\\KnowBarca\\KnowBarca\\KnowBarca.csproj",
+        "packagesPath": "C:\\Users\\admttclukaszek\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\admttclukaszek\\Source\\Repos\\marclukaszek\\KnowBarca\\KnowBarca\\KnowBarca\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "D:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\ProgramData\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Marcin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\admttclukaszek\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -27,8 +27,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://nugetized.blob.core.windows.net/live-reload/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netstandard2.0": {

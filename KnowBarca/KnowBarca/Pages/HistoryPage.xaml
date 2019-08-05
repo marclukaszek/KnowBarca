@@ -13,16 +13,19 @@
                IsClippedToBounds="False"
                BorderColor="Black"
                HasShadow="True"
+               BackgroundColor="#edbb00"
                CornerRadius="30"
                HorizontalOptions="CenterAndExpand"
                VerticalOptions="CenterAndExpand">
+            <Frame BackgroundColor="White"
+                   CornerRadius="30">
+                <ScrollView>
             <StackLayout VerticalOptions="StartAndExpand"
-                     Padding="5"
-                     BackgroundColor="Gray">
+                     BackgroundColor="White">
                 <Label Text="Poznaj historię"
                    FontAttributes="Bold"
                    FontSize="Large"
-                   TextColor="White"
+                   TextColor="Black"
                    Opacity="1"
                    />
                 <StackLayout Grid.Column="0"
@@ -35,31 +38,31 @@
                 <Label Margin="5,5,5,5"
                    Opacity="1"
                    Text="    W tym trybie zdobędziesz wiedzę z 5 różnych działów związanych z FC Barceloną:"
-                   TextColor="White"/>
+                   TextColor="Black"/>
                 <Label Margin="5,5,5,5"
                    Opacity="1"
                    Text="- Historia,"
-                   TextColor="White"/>
+                   TextColor="Black"/>
                 <Label Margin="5,5,5,5"
                    Opacity="1"
                    Text="- Stadiony,"
-                   TextColor="White"/>
+                   TextColor="Black"/>
                 <Label Margin="5,5,5,5"
                    Opacity="1"
                    Text="- Herb i barwy,"
-                   TextColor="White"/>
+                   TextColor="Black"/>
                 <Label Margin="5,5,5,5"
                    Opacity="1"
                    Text="- Trofea,"
-                   TextColor="White"/>
+                   TextColor="Black"/>
                 <Label Margin="5,5,5,5"
                    Opacity="1"
                    Text="- Transfery."
-                   TextColor="White"/>
+                   TextColor="Black"/>
                 <Label Margin="5,5,5,5"
                    Opacity="1"
                    Text="Po każdym z działów zostanie Ci zadane 3 pytania. Aby rozpocząć kolejny dział wszystkie udzielone odpowiedzi muszą być poprawne, w przeciwnym razie, test zostanie powtórzony od ostatniego niezaliczonego działu."
-                   TextColor="White"/>
+                   TextColor="Black"/>
                 
                        
                        
@@ -70,10 +73,13 @@
                        HorizontalOptions="Center"
                        VerticalOptions="End"
                        FontSize="Medium"
-                       TextColor="BlueViolet"
+                       TextColor="Black"
                         Clicked="BeginningPage_Clicked"
+                        CornerRadius="30"
                        ></Button>
             </StackLayout>
+                </ScrollView>
+            </Frame>
         </Frame>
     </Grid>
 </ContentPage>
