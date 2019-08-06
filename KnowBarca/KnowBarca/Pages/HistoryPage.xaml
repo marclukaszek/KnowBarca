@@ -74,6 +74,7 @@
                        VerticalOptions="End"
                        FontSize="Medium"
                        TextColor="Black"
+                        FontAttributes="Bold"
                         Clicked="BeginningPage_Clicked"
                         CornerRadius="30"
                        ></Button>

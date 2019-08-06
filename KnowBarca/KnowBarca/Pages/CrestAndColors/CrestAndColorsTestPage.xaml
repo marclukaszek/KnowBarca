@@ -14,40 +14,46 @@
         <Frame Margin="10,5,10,5"
                IsClippedToBounds="False"
                BorderColor="Black"
-               HasShadow="True"
+                             BackgroundColor="#edbb00"
                CornerRadius="30"
                HorizontalOptions="CenterAndExpand"
                VerticalOptions="CenterAndExpand"
-               IsVisible="True"
                x:Name="Pyt1">
-            <StackLayout VerticalOptions="StartAndExpand"
+            <Frame BackgroundColor="White"
+                   CornerRadius="30">
+                <ScrollView>
+
+                    <StackLayout VerticalOptions="StartAndExpand"
                      Padding="5"
-                     BackgroundColor="Gray">
-                <Label Text="Herb i barwy - Test"
+                     BackgroundColor="White">
+                        <Label Text="Herb i barwy - Test"
                    FontAttributes="Bold"
                    FontSize="Large"
-                   TextColor="White"
+                   TextColor="Black"
                    Opacity="1"
                    />
-                <StackLayout VerticalOptions="Start">
-                    <Label Margin="5,5,5,5"
+                        <StackLayout VerticalOptions="Start">
+                            <Label Margin="5,5,5,5"
                    Opacity="1"
                    Text="Jakiego kształtu były pierwszy herb FCB?"
-                   TextColor="White"/>
-                    <input:CheckBox Text="Dzbana" 
-                                    TextColor="White"
+                   TextColor="Black"/>
+                            <input:CheckBox Text="Dzbana" 
+                                    TextColor="Black"
                                     x:Name="wrong1"/>
-                    <input:CheckBox Text="Tarczy"
-                                    TextColor="White"
+                            <input:CheckBox Text="Tarczy"
+                                    TextColor="Black"
                                     x:Name="wrong2"/>
-                    <input:CheckBox Text="Rombu"
-                                    TextColor="White"
+                            <input:CheckBox Text="Rombu"
+                                    TextColor="Black"
                                     x:Name="correct"/>
-                </StackLayout>
-                <Button Text="Następne pytanie ->"
+                        </StackLayout>
+                        <Button Text="Następne pytanie ->"
                         HorizontalOptions="End"
+                        FontAttributes="Bold"
                         Clicked="StartPyt2_Clicked"/>
-            </StackLayout>
+                    </StackLayout>
+                </ScrollView>
+            </Frame>
         </Frame>
         <Frame Margin="10,5,10,5"
                IsClippedToBounds="False"
@@ -57,35 +63,43 @@
                HorizontalOptions="CenterAndExpand"
                VerticalOptions="CenterAndExpand"
                IsVisible="False"
+               BackgroundColor="#edbb00"
                x:Name="Pyt2">
-            <StackLayout VerticalOptions="StartAndExpand"
+            <Frame BackgroundColor="White"
+                   CornerRadius="30">
+                <ScrollView>
+
+                    <StackLayout VerticalOptions="StartAndExpand"
                      Padding="5"
-                     BackgroundColor="Gray">
-                <Label Text="Herb i barwy - Test"
+                     BackgroundColor="White">
+                        <Label Text="Herb i barwy - Test"
                    FontAttributes="Bold"
                    FontSize="Large"
-                   TextColor="White"
+                   TextColor="Black"
                    Opacity="1"
                    />
-                <StackLayout VerticalOptions="Start">
-                    <Label Margin="5,5,5,5"
+                        <StackLayout VerticalOptions="Start">
+                            <Label Margin="5,5,5,5"
                    Opacity="1"
                    Text="W którym roku napis FCB na herbie został zmieniony?"
-                   TextColor="White"/>
-                    <input:CheckBox Text="1974 r." 
-                                    TextColor="White"
+                   TextColor="Black"/>
+                            <input:CheckBox Text="1974 r." 
+                                    TextColor="Black"
                                     x:Name="Pyt2w" />
-                    <input:CheckBox Text="1939 r."
-                                    TextColor="White"
+                            <input:CheckBox Text="1939 r."
+                                    TextColor="Black"
                                     x:Name="Pyt2c"/>
-                    <input:CheckBox Text="1954 r."
-                                    TextColor="White"
+                            <input:CheckBox Text="1954 r."
+                                    TextColor="Black"
                                     x:Name="Pyt2ww"/>
-                </StackLayout>
-                <Button Text="Następne pytanie ->"
+                        </StackLayout>
+                        <Button Text="Następne pytanie ->"
                         HorizontalOptions="End"
+                        FontAttributes="Bold"
                         Clicked="StartPyt3_Clicked"/>
-            </StackLayout>
+                    </StackLayout>
+                </ScrollView>
+            </Frame>
         </Frame>
         <Frame Margin="10,5,10,5"
                IsClippedToBounds="False"
@@ -95,36 +109,44 @@
                HorizontalOptions="CenterAndExpand"
                VerticalOptions="CenterAndExpand"
                IsVisible="False"
+               BackgroundColor="#edbb00"
                x:Name="Pyt3">
-            <StackLayout VerticalOptions="StartAndExpand"
+            <Frame BackgroundColor="White"
+                   CornerRadius="30">
+                <ScrollView>
+
+                    <StackLayout VerticalOptions="StartAndExpand"
                      Padding="5"
-                     BackgroundColor="Gray">
-                <Label Text="Herb i barwy - Test"
+                     BackgroundColor="White">
+                        <Label Text="Herb i barwy - Test"
                    FontAttributes="Bold"
                    FontSize="Large"
-                   TextColor="White"
+                   TextColor="Black"
                    Opacity="1"
                    />
-                <StackLayout VerticalOptions="Start">
-                    <Label Margin="5,5,5,5"
+                        <StackLayout VerticalOptions="Start">
+                            <Label Margin="5,5,5,5"
                    Opacity="1"
                    Text="Jaki był kolor koszulek w którym Barca rozegrała pierwsze 10 sezonów?"
-                   TextColor="White"/>
-                    <input:CheckBox Text="Biały" 
-                                    TextColor="White"
+                   TextColor="Black"/>
+                            <input:CheckBox Text="Biały" 
+                                    TextColor="Black"
                                     x:Name="Pyt3c"
                                     />
-                    <input:CheckBox Text="Czarny"
-                                    TextColor="White"
+                            <input:CheckBox Text="Czarny"
+                                    TextColor="Black"
                                     x:Name="Pyt3ww"/>
-                    <input:CheckBox Text="Niebieski"
-                                    TextColor="White"
+                            <input:CheckBox Text="Niebieski"
+                                    TextColor="Black"
                                     x:Name="Pyt3w"/>
-                </StackLayout>
-                <Button Text="Sprawdź odpowiedzi"
+                        </StackLayout>
+                        <Button Text="Sprawdź odpowiedzi"
                         HorizontalOptions="End"
+                        FontAttributes="Bold"
                         Clicked="Check_Clicked"/>
-            </StackLayout>
+                    </StackLayout>
+                </ScrollView>
+            </Frame>
         </Frame>
     </Grid>
 </ContentPage>

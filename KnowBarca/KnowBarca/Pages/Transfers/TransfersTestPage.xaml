@@ -19,35 +19,42 @@
                HorizontalOptions="CenterAndExpand"
                VerticalOptions="CenterAndExpand"
                IsVisible="True"
+               BackgroundColor="#edbb00"
                x:Name="Pyt1">
-            <StackLayout VerticalOptions="StartAndExpand"
+            <Frame BackgroundColor="White"
+                   CornerRadius="30">
+                <ScrollView>
+                    <StackLayout VerticalOptions="StartAndExpand"
                      Padding="5"
-                     BackgroundColor="Gray">
-                <Label Text="Transfery - Test"
+                     BackgroundColor="White">
+                        <Label Text="Transfery - Test"
                    FontAttributes="Bold"
                    FontSize="Large"
-                   TextColor="White"
+                   TextColor="Black"
                    Opacity="1"
                    />
-                <StackLayout VerticalOptions="Start">
-                    <Label Margin="5,5,5,5"
+                        <StackLayout VerticalOptions="Start">
+                            <Label Margin="5,5,5,5"
                    Opacity="1"
                    Text="Do którego z klubów przeniósł się za 42,5 mln € Alexis Sanchez?"
-                   TextColor="White"/>
-                    <input:CheckBox Text="Manchester United F.C." 
-                                    TextColor="White"
+                   TextColor="Black"/>
+                            <input:CheckBox Text="Manchester United F.C." 
+                                    TextColor="Black"
                                     x:Name="wrong1"/>
-                    <input:CheckBox Text="Udinese Calcio"
-                                    TextColor="White"
+                            <input:CheckBox Text="Udinese Calcio"
+                                    TextColor="Black"
                                     x:Name="wrong2"/>
-                    <input:CheckBox Text="Arsenal F.C."
-                                    TextColor="White"
+                            <input:CheckBox Text="Arsenal F.C."
+                                    TextColor="Black"
                                     x:Name="correct"/>
-                </StackLayout>
-                <Button Text="Następne pytanie ->"
+                        </StackLayout>
+                        <Button Text="Następne pytanie ->"
                         HorizontalOptions="End"
+                        FontAttributes="Bold"
                         Clicked="StartPyt2_Clicked"/>
-            </StackLayout>
+                    </StackLayout>
+                </ScrollView>
+            </Frame>
         </Frame>
         <Frame Margin="10,5,10,5"
                IsClippedToBounds="False"
@@ -57,74 +64,88 @@
                HorizontalOptions="CenterAndExpand"
                VerticalOptions="CenterAndExpand"
                IsVisible="False"
+               BackgroundColor="#edbb00"
                x:Name="Pyt2">
-            <StackLayout VerticalOptions="StartAndExpand"
+            <Frame BackgroundColor="White"
+                   CornerRadius="30">
+                <ScrollView>
+                    <StackLayout VerticalOptions="StartAndExpand"
                      Padding="5"
-                     BackgroundColor="Gray">
-                <Label Text="Transfery - Test"
+                     BackgroundColor="White">
+                        <Label Text="Transfery - Test"
                    FontAttributes="Bold"
                    FontSize="Large"
-                   TextColor="White"
+                   TextColor="Black"
                    Opacity="1"
                    />
-                <StackLayout VerticalOptions="Start">
-                    <Label Margin="5,5,5,5"
+                        <StackLayout VerticalOptions="Start">
+                            <Label Margin="5,5,5,5"
                    Opacity="1"
                    Text="Jaką kwotę otrzymałą Barcelona od Realu Madryt za transfer Luisa Figo?"
-                   TextColor="White"/>
-                    <input:CheckBox Text="60 mln €" 
-                                    TextColor="White"
+                   TextColor="Black"/>
+                            <input:CheckBox Text="60 mln €" 
+                                    TextColor="Black"
                                     x:Name="Pyt2c" />
-                    <input:CheckBox Text="69 mln €"
-                                    TextColor="White"
+                            <input:CheckBox Text="69 mln €"
+                                    TextColor="Black"
                                     x:Name="Pyt2w"/>
-                    <input:CheckBox Text="68 mln €"
-                                    TextColor="White"
+                            <input:CheckBox Text="68 mln €"
+                                    TextColor="Black"
                                     x:Name="Pyt2ww"/>
-                </StackLayout>
-                <Button Text="Następne pytanie ->"
+                        </StackLayout>
+                        <Button Text="Następne pytanie ->"
+                        FontAttributes="Bold"
                         HorizontalOptions="End"
                         Clicked="StartPyt3_Clicked"/>
-            </StackLayout>
+                    </StackLayout>
+                </ScrollView>
+            </Frame>
         </Frame>
         <Frame Margin="10,5,10,5"
                IsClippedToBounds="False"
                BorderColor="Black"
                HasShadow="True"
                CornerRadius="30"
+               BackgroundColor="#edbb00"
                HorizontalOptions="CenterAndExpand"
                VerticalOptions="CenterAndExpand"
                IsVisible="False"
                x:Name="Pyt3">
-            <StackLayout VerticalOptions="StartAndExpand"
+            <Frame BackgroundColor="White"
+                   CornerRadius="30">
+                <ScrollView>
+                    <StackLayout VerticalOptions="StartAndExpand"
                      Padding="5"
-                     BackgroundColor="Gray">
-                <Label Text="Transfery - Test"
+                     BackgroundColor="White">
+                        <Label Text="Transfery - Test"
                    FontAttributes="Bold"
                    FontSize="Large"
-                   TextColor="White"
+                   TextColor="Black"
                    Opacity="1"
                    />
-                <StackLayout VerticalOptions="Start">
-                    <Label Margin="5,5,5,5"
+                        <StackLayout VerticalOptions="Start">
+                            <Label Margin="5,5,5,5"
                    Opacity="1"
                    Text="Który z zawodników był najdroższym z transferów FCB?"
-                   TextColor="White"/>
-                    <input:CheckBox Text="O. Dembele" 
-                                    TextColor="White"
+                   TextColor="Black"/>
+                            <input:CheckBox Text="O. Dembele" 
+                                    TextColor="Black"
                                     x:Name="Pyt3w"
                                     />
-                    <input:CheckBox Text="A. Griezmann"
-                                    TextColor="White"
+                            <input:CheckBox Text="A. Griezmann"
+                                    TextColor="Black"
                                     x:Name="Pyt3ww"/>
-                    <input:CheckBox Text="P. Couthinho"
-                                    TextColor="White"
+                            <input:CheckBox Text="P. Couthinho"
+                                    TextColor="Black"
                                     x:Name="Pyt3c"/>
-                </StackLayout>
-                <Button Text="Sprawdź odpowiedzi"
+                        </StackLayout>
+                        <Button Text="Sprawdź odpowiedzi"
                         HorizontalOptions="End"
+                        FontAttributes="Bold"
                         Clicked="Check_Clicked"/>
-            </StackLayout>
+                    </StackLayout>
+                </ScrollView>
+            </Frame>
         </Frame>
     </Grid>
 </ContentPage>

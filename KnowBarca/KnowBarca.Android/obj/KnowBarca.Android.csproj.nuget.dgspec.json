@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\admttclukaszek\\Source\\Repos\\marclukaszek\\KnowBarca\\KnowBarca\\KnowBarca.Android\\KnowBarca.Android.csproj": {}
+    "C:\\Users\\Marcin\\source\\repos\\KnowBarca\\KnowBarca\\KnowBarca.Android\\KnowBarca.Android.csproj": {}
   },
   "projects": {
-    "C:\\Users\\admttclukaszek\\Source\\Repos\\marclukaszek\\KnowBarca\\KnowBarca\\KnowBarca.Android\\KnowBarca.Android.csproj": {
+    "C:\\Users\\Marcin\\source\\repos\\KnowBarca\\KnowBarca\\KnowBarca.Android\\KnowBarca.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\admttclukaszek\\Source\\Repos\\marclukaszek\\KnowBarca\\KnowBarca\\KnowBarca.Android\\KnowBarca.Android.csproj",
+        "projectUniqueName": "C:\\Users\\Marcin\\source\\repos\\KnowBarca\\KnowBarca\\KnowBarca.Android\\KnowBarca.Android.csproj",
         "projectName": "KnowBarca.Android",
-        "projectPath": "C:\\Users\\admttclukaszek\\Source\\Repos\\marclukaszek\\KnowBarca\\KnowBarca\\KnowBarca.Android\\KnowBarca.Android.csproj",
-        "packagesPath": "C:\\Users\\admttclukaszek\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\admttclukaszek\\Source\\Repos\\marclukaszek\\KnowBarca\\KnowBarca\\KnowBarca.Android\\obj\\",
+        "projectPath": "C:\\Users\\Marcin\\source\\repos\\KnowBarca\\KnowBarca\\KnowBarca.Android\\KnowBarca.Android.csproj",
+        "packagesPath": "C:\\Users\\Marcin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Marcin\\source\\repos\\KnowBarca\\KnowBarca\\KnowBarca.Android\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
-          "C:\\ProgramData\\Xamarin\\NuGet\\"
+          "D:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\admttclukaszek\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Marcin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -27,13 +27,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nugetized.blob.core.windows.net/live-reload/index.json": {}
         },
         "frameworks": {
           "monoandroid90": {
             "projectReferences": {
-              "C:\\Users\\admttclukaszek\\Source\\Repos\\marclukaszek\\KnowBarca\\KnowBarca\\KnowBarca\\KnowBarca.csproj": {
-                "projectPath": "C:\\Users\\admttclukaszek\\Source\\Repos\\marclukaszek\\KnowBarca\\KnowBarca\\KnowBarca\\KnowBarca.csproj"
+              "C:\\Users\\Marcin\\source\\repos\\KnowBarca\\KnowBarca\\KnowBarca\\KnowBarca.csproj": {
+                "projectPath": "C:\\Users\\Marcin\\source\\repos\\KnowBarca\\KnowBarca\\KnowBarca\\KnowBarca.csproj"
               }
             }
           }
@@ -72,35 +73,35 @@
             },
             "Xamarin.Essentials": {
               "target": "Package",
-              "version": "[1.1.0, )"
+              "version": "[1.2.0, )"
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[4.0.0.425677, )"
+              "version": "[4.1.0.618606, )"
             },
             "Xamarin.Forms.InputKit": {
               "target": "Package",
-              "version": "[3.0.12, )"
+              "version": "[3.0.11, )"
             }
           }
         }
       }
     },
-    "C:\\Users\\admttclukaszek\\Source\\Repos\\marclukaszek\\KnowBarca\\KnowBarca\\KnowBarca\\KnowBarca.csproj": {
+    "C:\\Users\\Marcin\\source\\repos\\KnowBarca\\KnowBarca\\KnowBarca\\KnowBarca.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\admttclukaszek\\Source\\Repos\\marclukaszek\\KnowBarca\\KnowBarca\\KnowBarca\\KnowBarca.csproj",
+        "projectUniqueName": "C:\\Users\\Marcin\\source\\repos\\KnowBarca\\KnowBarca\\KnowBarca\\KnowBarca.csproj",
         "projectName": "KnowBarca",
-        "projectPath": "C:\\Users\\admttclukaszek\\Source\\Repos\\marclukaszek\\KnowBarca\\KnowBarca\\KnowBarca\\KnowBarca.csproj",
-        "packagesPath": "C:\\Users\\admttclukaszek\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\admttclukaszek\\Source\\Repos\\marclukaszek\\KnowBarca\\KnowBarca\\KnowBarca\\obj\\",
+        "projectPath": "C:\\Users\\Marcin\\source\\repos\\KnowBarca\\KnowBarca\\KnowBarca\\KnowBarca.csproj",
+        "packagesPath": "C:\\Users\\Marcin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Marcin\\source\\repos\\KnowBarca\\KnowBarca\\KnowBarca\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\ProgramData\\Xamarin\\NuGet\\",
+          "D:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\admttclukaszek\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Marcin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -109,7 +110,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nugetized.blob.core.windows.net/live-reload/index.json": {}
         },
         "frameworks": {
           "netstandard2.0": {

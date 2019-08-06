@@ -17,6 +17,7 @@
     <None Remove="Images\copa.jpg" />
     <None Remove="Images\herb.png" />
     <None Remove="Images\knowbarca.png" />
+    <None Remove="Images\knowbarca2.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -26,6 +27,7 @@
     <EmbeddedResource Include="Images\copa.jpg" />
     <EmbeddedResource Include="Images\herb.png" />
     <EmbeddedResource Include="Images\knowbarca.png" />
+    <EmbeddedResource Include="Images\knowbarca2.png" />
   </ItemGroup>
 
   <ItemGroup>

@@ -15,31 +15,36 @@
                HasShadow="True"
                CornerRadius="30"
                HorizontalOptions="CenterAndExpand"
+               BackgroundColor="#edbb00"
                VerticalOptions="CenterAndExpand">
-            <ScrollView>
-                <StackLayout VerticalOptions="StartAndExpand"
+            <Frame BackgroundColor="White"
+                   CornerRadius="30">
+                <ScrollView>
+                    <StackLayout VerticalOptions="StartAndExpand"
                      Padding="5"
-                     BackgroundColor="Gray">
+                     BackgroundColor="White">
 
-                    <Label Text="5. Transfery"
+                        <Label Text="5. Transfery"
                    FontAttributes="Bold"
                    FontSize="Large"
-                   TextColor="White"
+                   TextColor="Black"
                    Opacity="1"
                    />
-                    <Label Margin="5,5,5,5"
+                        <Label Margin="5,5,5,5"
                        Text="    Klub z Barcelony należy do zespołów które od odstatnich lat wydają najwięcej na rynku transferowym. Niestety jeśli chodzi o sprzedaż zawodników, na tej płaszczyźnie Blaugrana radzi sobie dużo gorzej. Nie licząc najdroższego sprzedanego piłkarza - Neymara (222 mln €) różnica pomiędzy graczem sprzedanym a zakupionym to 85 mln €. Drugim najdrożej sprzedanym piłkarzem jest Luis Figo który w sezonie 2000/2001 będąc kapitanem zespołu z Katalonii przeszedł do największego rywala Barcy - Realu Madryt za 60 mln €. Trzecim najdroższym transferem out FC Barcelony jest sprzedany w sezonie 2014/2015 Alexis Sanchez przenoszący się do Arsenalu za 42,5 mln €. Najdroższym kupionym przez klub zawodnikiem jest obecnie Couthinho który przeniósł się do Barcelony z Liverpoolu za 145 mln €. Drugi najdroższy obecnie transfer kosztował klub niewiele mniej bo 125 mln €. Za taką kwotę do Barcelony zameldował się Ousmane Dembele zakupiony z Borussi Dortmund. Ostatnią pozycją na transferowym podium jest zakupiony po sezonie 2018/2019 Antoine Griezmann. Kwota za transfer piłkarza Atletico Madryt opiewała na 120 mln €."
-                       TextColor="White"/>
-                    <Button Text="TEST"
+                       TextColor="Black"/>
+                        <Button Text="TEST"
                        HorizontalOptions="Center"
                        VerticalOptions="End"
                        FontSize="Medium"
-                       TextColor="BlueViolet"
+                            FontAttributes="Bold"
+                       TextColor="Black"
                             Clicked="TransfersTest_Clicked"
                        ></Button>
 
-                </StackLayout>
-            </ScrollView>
+                    </StackLayout>
+                </ScrollView>
+            </Frame>
         </Frame>
     </Grid>
 </ContentPage>

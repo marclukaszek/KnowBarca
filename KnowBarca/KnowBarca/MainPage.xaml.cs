@@ -20,7 +20,7 @@ namespace KnowBarca
             InitializeComponent();
 
             background.Source = ImageSource.FromResource("KnowBarca.Images.Background.png");
-            logo.Source = ImageSource.FromResource("KnowBarca.Images.knowbarca.png");
+            logo.Source = ImageSource.FromResource("KnowBarca.Images.knowbarca2.png");
         }
 
         async void History_Clicked(object sender, System.EventArgs e)

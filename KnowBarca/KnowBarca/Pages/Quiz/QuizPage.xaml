@@ -35,13 +35,17 @@
                    />
                     <input:CheckBox Text="Manchester United F.C." 
                                     TextColor="Black"
-                                    x:Name="w1"/>
+                                    x:Name="w1"
+                                    CheckChanged="W1_CheckChanged"/>
                     <input:CheckBox Text="Udinese Calcio"
                                     TextColor="Black"
-                                    x:Name="ww1"/>
+                                    x:Name="ww1"
+                                    CheckChanged="Ww1_CheckChanged"/>
                     <input:CheckBox Text="Arsenal F.C."
                                     TextColor="Black"
-                                    x:Name="c1"/>
+                                    x:Name="c1"
+                                    CheckChanged="C1_CheckChanged"
+                                    />
                 </StackLayout>
             </StackLayout>
         </Frame>
@@ -66,13 +70,16 @@
                    TextColor="Black" FontAttributes="Bold"/>
                     <input:CheckBox Text="60 mln €" 
                                     TextColor="Black"
-                                    x:Name="c2" />
+                                    x:Name="c2"
+                                    CheckChanged="C2_CheckChanged"/>
                             <input:CheckBox Text="69 mln €"
                                     TextColor="Black"
-                                    x:Name="w2" />
+                                    x:Name="w2"
+                                            CheckChanged="W2_CheckChanged"/>
                             <input:CheckBox Text="68 mln €"
                                     TextColor="Black"
-                                    x:Name="ww2" />
+                                    x:Name="ww2" 
+                                            CheckChanged="Ww2_CheckChanged"/>
                         </StackLayout>
             </StackLayout>
         </Frame>
@@ -98,13 +105,16 @@
                     <input:CheckBox Text="O. Dembele" 
                                     TextColor="Black"
                                     x:Name="w3"
+                                    CheckChanged="W3_CheckChanged"
                                     />
                     <input:CheckBox Text="A. Griezmann"
                                     TextColor="Black"
-                                    x:Name="ww3"/>
+                                    x:Name="ww3"
+                                    CheckChanged="Ww3_CheckChanged"/>
                     <input:CheckBox Text="P. Couthinho"
                                     TextColor="Black"
-                                    x:Name="c3"/>
+                                    x:Name="c3"
+                                    CheckChanged="C3_CheckChanged"/>
                 </StackLayout>
                         
                     </StackLayout>

@@ -13,42 +13,47 @@
                IsClippedToBounds="False"
                BorderColor="Black"
                HasShadow="True"
+               BackgroundColor="#edbb00"
                CornerRadius="30"
                HorizontalOptions="CenterAndExpand"
                VerticalOptions="CenterAndExpand">
-            <ScrollView>
-                <StackLayout VerticalOptions="StartAndExpand"
+            <Frame BackgroundColor="White"
+                   CornerRadius="30">
+                <ScrollView>
+                    <StackLayout VerticalOptions="StartAndExpand"
                      Padding="5"
-                     BackgroundColor="Gray">
+                     BackgroundColor="White">
 
-                    <Label Text="3. Herb i barwy"
+                        <Label Text="3. Herb i barwy"
                    FontAttributes="Bold"
                    FontSize="Large"
-                   TextColor="White"
+                   TextColor="Black"
                    Opacity="1"
                    />
-                    <Label Text="Herb"
+                        <Label Text="Herb"
                        FontSize="Medium"/>
-                    <Image x:Name="herb"
+                        <Image x:Name="herb"
                            Aspect="AspectFit"/>
-                    <Label Margin="5,5,5,5"
+                        <Label Margin="5,5,5,5"
                        Text="    Pierwszy herb klubu był praktycznie kopią herbu miasta Barcelony. Miał on kształ rombu i miał pokazywać jak bardzo klub identyfikuje się z miastem. Taki wizerunek herbu utrzymał się do 1910 r., następna wersja była już całkowicie odmieniona, pozostawiono jednak dwa ważne elementy: flagę Katalonii - senyerę oraz pasy w barwach klubowych. Po 1910 roku na herbie dokonywano tylko kosmetycznych zmian. Największą zmiana czekała go w roku 1939 r. kiedy to władza Generała Franco zmieniło napis na środkowym pasie z FCB na bardziej hiszpańsko brzmiące CFB. Obecny wygląd herby obowiązuje od 1974 r. a najnowsze poprawki naniesiono w 2002 r."
-                       TextColor="White"/>
-                    <Label Text="Barwy"
+                       TextColor="Black"/>
+                        <Label Text="Barwy"
                        FontSize="Medium"/>
-                    <Label Margin="5,5,5,5"
+                        <Label Margin="5,5,5,5"
                        Text="    Jednym z najbardziej wyróżniających się elementów FC Barcelony na tle innych zespołów są klubowe barwy. Bordowo-granatowy gości na domowych strojach FC Barcelony od ponad stu lat. Z tego też wział się przydomek klubu: Blaugrana. Po katalońsku oznacza to po prostu połączenie tych dwóch kolorów. Ciekawostką jest to, że przez pierwsze 10 sezonów istnienia klubu, koszulki były białe. Następnie zmieniono je na czarne, a dopiero od 1920 roku stały się niebieskie."
-                       TextColor="White"/>
-                    <Button Text="TEST"
+                       TextColor="Black"/>
+                        <Button Text="TEST"
                        HorizontalOptions="Center"
                        VerticalOptions="End"
                        FontSize="Medium"
-                       TextColor="BlueViolet"
+                       TextColor="Black"
+                            FontAttributes="Bold"
                             Clicked="CrestAndColorsTest_Clicked"
                        ></Button>
 
-                </StackLayout>
-            </ScrollView>
+                    </StackLayout>
+                </ScrollView>
+            </Frame>
         </Frame>
     </Grid>
 </ContentPage>

@@ -14,29 +14,34 @@
                BorderColor="Black"
                HasShadow="True"
                CornerRadius="30"
+                              BackgroundColor="#edbb00"
                HorizontalOptions="CenterAndExpand"
                VerticalOptions="CenterAndExpand">
-            <StackLayout VerticalOptions="StartAndExpand"
+            <Frame BackgroundColor="White"
+                   CornerRadius="30">
+                <StackLayout VerticalOptions="StartAndExpand"
                      Padding="5"
-                     BackgroundColor="Gray">
-                <Label Text="Trofea - Sprawdzenie odpowiedzi"
+                     BackgroundColor="White">
+                    <Label Text="Trofea - Sprawdzenie odpowiedzi"
                    FontAttributes="Bold"
                    FontSize="Medium"
-                   TextColor="White"
+                   TextColor="Black"
                    Opacity="1"
                    />
-                <Label Margin="5,5,5,5"
+                    <Label Margin="5,5,5,5"
                    Opacity="1"
                    Text="Brawo! Wszystkie odpowiedzi są poprawne!"
-                   TextColor="White"/>
-                <Button Text="Następny rozdział"
+                   TextColor="Black"/>
+                    <Button Text="Następny rozdział"
                        HorizontalOptions="Center"
                        VerticalOptions="End"
                        FontSize="Medium"
-                       TextColor="BlueViolet"
+                       TextColor="Black"
+                        FontAttributes="Bold"
                         Clicked="TransfersPage_Clicked"
                        ></Button>
-            </StackLayout>
+                </StackLayout>
+            </Frame>
         </Frame>
     </Grid>
 </ContentPage>

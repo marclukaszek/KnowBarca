@@ -15,28 +15,33 @@
                HasShadow="True"
                CornerRadius="30"
                HorizontalOptions="CenterAndExpand"
+               BackgroundColor="#edbb00"
                VerticalOptions="CenterAndExpand">
-            <StackLayout VerticalOptions="StartAndExpand"
+            <Frame BackgroundColor="White"
+                   CornerRadius="30">
+                <StackLayout VerticalOptions="StartAndExpand"
                      Padding="5"
-                     BackgroundColor="Gray">
-                <Label Text="Herb i barwy - Sprawdzenie odpowiedzi"
+                     BackgroundColor="White">
+                    <Label Text="Herb i barwy - Sprawdzenie odpowiedzi"
                    FontAttributes="Bold"
                    FontSize="Medium"
-                   TextColor="White"
+                   TextColor="Black"
                    Opacity="1"
                    />
-                <Label Margin="5,5,5,5"
+                    <Label Margin="5,5,5,5"
                    Opacity="1"
                    Text="Brawo! Wszystkie odpowiedzi są poprawne!"
-                   TextColor="White"/>
-                <Button Text="Następny rozdział"
+                   TextColor="Black"/>
+                    <Button Text="Następny rozdział"
                        HorizontalOptions="Center"
                        VerticalOptions="End"
                        FontSize="Medium"
-                       TextColor="BlueViolet"
+                       TextColor="Black"
                        Clicked="TrophiesPage_Clicked"
+                        FontAttributes="Bold"
                        ></Button>
-            </StackLayout>
+                </StackLayout>
+            </Frame>
         </Frame>
     </Grid>
 </ContentPage>

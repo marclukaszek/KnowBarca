@@ -15,28 +15,35 @@
                HasShadow="True"
                CornerRadius="30"
                HorizontalOptions="CenterAndExpand"
+               BackgroundColor="#edbb00"
                VerticalOptions="CenterAndExpand">
-            <StackLayout VerticalOptions="StartAndExpand"
+            <Frame BackgroundColor="White"
+                   CornerRadius="30">
+                <ScrollView>
+                    <StackLayout VerticalOptions="StartAndExpand"
                      Padding="5"
-                     BackgroundColor="Gray">
-                <Label Text="Transfery - Sprawdzenie odpowiedzi"
+                     BackgroundColor="White">
+                        <Label Text="Transfery - Sprawdzenie odpowiedzi"
                    FontAttributes="Bold"
                    FontSize="Medium"
-                   TextColor="White"
+                   TextColor="Black"
                    Opacity="1"
                    />
-                <Label Margin="5,5,5,5"
+                        <Label Margin="5,5,5,5"
                    Opacity="1"
                    Text="Brawo! Wszystkie odpowiedzi są poprawne!"
-                   TextColor="White"/>
-                <Button Text="Zakończ naukę"
+                   TextColor="Black"/>
+                        <Button Text="Zakończ naukę"
                        HorizontalOptions="Center"
                        VerticalOptions="End"
                        FontSize="Medium"
-                       TextColor="BlueViolet"
+                       TextColor="Black"
                        Clicked="MainPage_Clicked"
+                        FontAttributes="Bold"
                        ></Button>
-            </StackLayout>
+                    </StackLayout>
+                </ScrollView>
+            </Frame>
         </Frame>
     </Grid>
 </ContentPage>

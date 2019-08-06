@@ -15,69 +15,74 @@
                HasShadow="True"
                CornerRadius="30"
                HorizontalOptions="CenterAndExpand"
+               BackgroundColor="#edbb00"
                VerticalOptions="CenterAndExpand">
-            <ScrollView>
-            <StackLayout VerticalOptions="StartAndExpand"
+            <Frame BackgroundColor="White"
+                   CornerRadius="30">
+                <ScrollView>
+                    <StackLayout VerticalOptions="StartAndExpand"
                      Padding="5"
-                     BackgroundColor="Gray">
-                
-                <Label Text="2. Stadion"
+                     BackgroundColor="White">
+
+                        <Label Text="2. Stadiony"
                    FontAttributes="Bold"
                    FontSize="Large"
-                   TextColor="White"
+                   TextColor="Black"
                    Opacity="1"
                    />
-                <StackLayout Grid.Column="0"
+                        <StackLayout Grid.Column="0"
                          Grid.Row="0">
-                    <Image x:Name="Barca1903"
+                            <Image x:Name="Barca1903"
                    Margin="5,0,5,0"
                    />
-                </StackLayout>
-                <Label Text="Velodromo de la Bonanova (1899-1900)"
+                        </StackLayout>
+                        <Label Text="Velodromo de la Bonanova (1899-1900)"
                        FontSize="Medium"/>
-                <Label Margin="5,5,5,5"
+                        <Label Margin="5,5,5,5"
                        Text="    Pierwsze boisko piłkarskie, na którym swoje mecze rozegrała FC Barcelona. Drużyna nie miała go wykupionego na własność, musiała je dzielić z inną drużyną z regionu – El Catala. Poza tym murawa boiska była bardzo nierówna, więc piłkarzom trudno było prezentować pełnię swoich umiejętności."
-                       TextColor="White"/>
-                <Label Text="Stadion Casanovas Hotel (1900-1901)"
+                       TextColor="Black"/>
+                        <Label Text="Stadion Casanovas Hotel (1900-1901)"
                        FontSize="Medium"/>
-                <Label Margin="5,5,5,5"
+                        <Label Margin="5,5,5,5"
                        Text="    Po meczu sparingowym z miejscową drużyną El Catala dnia 25 grudnia 1899, zarząd zdecydował, iż 2 drużyny nie mogą dzielić się boiskiem. Dlatego też władze zdecydowały się na dzierżawę stadionu nieopodal hotelu Casanovas. Inaugurującym meczem na tym obiekcie były pierwsze, historyczne derby Katalonii z drużyną Sociedad Española de Futbol, dzisiaj znaną jako RCD Espanyol. Niestety zbyt długi dojazd do obiektu utrudniał piłkarzom i trenerom dobre przygotowanie i punktualne przybycie na spotkanie z rywalem."
-                       TextColor="White"/>
-                <Label Text="Stadion Carretera de Horta (1901-1905)"
+                       TextColor="Black"/>
+                        <Label Text="Stadion Carretera de Horta (1901-1905)"
                        FontSize="Medium"/>
-                <Label Margin="5,5,5,5"
+                        <Label Margin="5,5,5,5"
                        Text="    Zbytnie opóźnianie rozpoczynania meczów przyczyniło się do tego, iż zarząd klubowy musiał szukać kolejnego rozwiązania w kwestii boiska. Poszukiwania zostały zakończone znalezieniem boiska znajdującego się w pobliżu parku w Barcelonie, Guinardo. Pierwszy mecz, jaki rozegrano na tym obiekcie, odbył się w ramach Pucharu Alfonso Macaya, 23 listopada 1901r., zakończony wynikiem 4:0 dla gospodarzy, hat-trickiem popisał się wtedy kapitan drużyny, Joan Gamper."                   
-                       TextColor="White"/>
-                <Label Text="Stadion Calle Muntander (1905-1909)"
+                       TextColor="Black"/>
+                        <Label Text="Stadion Calle Muntander (1905-1909)"
                        FontSize="Medium"/>
-                <Label Margin="5,5,5,5"
+                        <Label Margin="5,5,5,5"
                        Text="    Poprzedni stadion był zbyt mały, aby można było pomieścić wszystkich kibiców przychodzących na spotkania, dlatego też zdecydowano się na kolejną przeprowadzkę. Tym razem to The Carrer Muntander Ground stał się stadionem Barçy. Pierwszym meczem było spotkanie rozegrane w finale Pucharu Katalonii z Espanyolem Barcelona 3:2. Jednak mimo wygranej wielu socis odchodziło z klubu, a nowi, którzy wprowadziliby nową atmosferę w klubie, nie pojawiali się. Z tego powodu Joan Gamper zdecydował się pełnić funkcję prezesa i rozpoczął poszukiwania kolejnego stadionu, ponieważ Muntander kupił lokalny rywal."
-                       TextColor="White"/>
-                    <Label Text="Stadion Calle Industrial (1909-1922)"
+                       TextColor="Black"/>
+                        <Label Text="Stadion Calle Industrial (1909-1922)"
                        FontSize="Medium"/>
-                <Label Margin="5,5,5,5"
+                        <Label Margin="5,5,5,5"
                        Text="    Pierwszym meczem jaki rozegrano na Spittonie był mecz pomiędzy FC Barcelona a El Catala. Miało to miejsce dnia 14 marca 1909 w Pucharze Katalonii. Ostateczny wynik tego spotkania to 2:2. W ówczesnych latach stadion można było uznać za nowoczesny, ponieważ posiadał sztuczne oświetlenie, a żaden inny stadion nie mógł się tym poszczycić. Obiekt był też stosunkowo duży – posiadał 6000 miejsc, w tym 1500 siedzących."
-                       TextColor="White"/>
-                    <Label Text="Camp de Les Corts (1922-1957)"
+                       TextColor="Black"/>
+                        <Label Text="Camp de Les Corts (1922-1957)"
                        FontSize="Medium"/>
-                <Label Margin="5,5,5,5"
+                        <Label Margin="5,5,5,5"
                        Text="    Na pomysł wybudowania stadionu klubowego wpadł w 1921 roku, ówczesny prezes klubu, Joan Gamper. Wraz z zarządem doszedł do wniosku, iż popularność piłki nożnej w Hiszpanii jest coraz większa, na mecze przychodziło coraz więcej kibiców. Dlatego założyciel FCB zlecił budowę nowego stadionu. Obiekt był pracą Santiago Mestresa i Josepa Alemany. Inauguracyjne spotkanie odbyło się 22 maja 1922 roku, gospodarze wygrali w nim 2:1 z klubem szkockiej Premier League, St. Mirren F.C. Obiekt nazywany był przez mieszkańców Hiszpanii Katedrą Futbolu ponieważ mógł pomieścić 30 tysięcy widzów. Wojna domowa w Hiszpanii nie przeszkodziła we wzroście liczby culés, których do 1941 przybywało coraz więcej, aż w końcu zarząd zdecydował się na modernizację obiektu. Po 4 latach liczba krzesełek wyniosła 60 tysięcy , a po 4 kolejnych - 75 tysięcy. Istniał jednak pewien problem – inne kluby chciały być gospodarzami na obiekcie. Ostatecznie zarząd zdecydował się na sprzedanie stadionu zespołowi wówczas występującemu w Segunda División."
-                       TextColor="White"/>
-                    <Label Text="Camp Nou (od 1957)"
+                       TextColor="Black"/>
+                        <Label Text="Camp Nou (od 1957)"
                        FontSize="Medium"/>
-                <Label Margin="5,5,5,5"
+                        <Label Margin="5,5,5,5"
                        Text="    Po sprzedaniu obiektu Les Corts innemu klubowi, władze FC Barcelona zdecydowały się na budowę jeszcze większego stadionu – Camp Nou. Jego budowa trwała 3 lata i kosztowała 300 mln peset. Inauguracyjne spotkanie rozegrano 24 września 1957r., a przeciwnikiem była Reprezentacja Warszawy, która przegrała 2:4."
-                       TextColor="White"/>
-                <Button Text="TEST"
+                       TextColor="Black"/>
+                        <Button Text="TEST"
                        HorizontalOptions="Center"
                        VerticalOptions="End"
                        FontSize="Medium"
-                       TextColor="BlueViolet"
+                        FontAttributes="Bold"
+                       TextColor="Black"
                        Clicked="Test_Clicked"
                        ></Button>
-                
-            </StackLayout>
-            </ScrollView>
+
+                    </StackLayout>
+                </ScrollView>
+            </Frame>
         </Frame>
     </Grid>
 </ContentPage>
