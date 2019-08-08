@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="KnowBarca.Pages.Stadium.StadiumCorrectPage"
+             NavigationPage.HasNavigationBar="False">
+    <Grid>
+        <Image x:Name="background"
+           Aspect="Fill" />
+        <Frame Margin="10,5,10,5"
+               IsClippedToBounds="False"
+               BorderColor="Black"
+               HasShadow="True"
+               CornerRadius="30"
+               HorizontalOptions="CenterAndExpand"
+               BackgroundColor="#edbb00"
+               VerticalOptions="CenterAndExpand">
+            <Frame BackgroundColor="White"
+                   CornerRadius="30">
+                <ScrollView>
+                <StackLayout VerticalOptions="StartAndExpand"
+                     Padding="5"
+                     BackgroundColor="White">
+                    <Label Text="Stadiony - Sprawdzenie odpowiedzi"
+                   FontAttributes="Bold"
+                   FontSize="Medium"
+                   TextColor="Black"
+                   Opacity="1"
+                   />
+                    <Label Margin="5,5,5,5"
+                   Opacity="1"
+                   Text="Brawo! Wszystkie odpowiedzi są poprawne!"
+                   TextColor="Black"/>
+                    <Button Text="Następny rozdział"
+                       HorizontalOptions="Center"
+                       VerticalOptions="End"
+                       FontSize="Medium"
+                       TextColor="Black"
+                        FontAttributes="Bold"
+                        Clicked="CrestAndColors_Clicked"
+                       ></Button>
+                </StackLayout>
+                </ScrollView>
+            </Frame>
+        </Frame>
+    </Grid>
+</ContentPage>

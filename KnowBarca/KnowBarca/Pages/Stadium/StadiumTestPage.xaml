@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:input="clr-namespace:Plugin.InputKit.Shared.Controls;assembly=Plugin.InputKit"
+             mc:Ignorable="d"
+             x:Class="KnowBarca.Pages.Stadium.StadiumTestPage"
+             NavigationPage.HasNavigationBar="False"
+             >
+    <Grid>
+        <Image x:Name="background"
+           Aspect="Fill" />
+        <Frame Margin="10,5,10,5"
+               IsClippedToBounds="False"
+               BorderColor="Black"
+               HasShadow="True"
+               CornerRadius="30"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="CenterAndExpand"
+                              BackgroundColor="#edbb00"
+               IsVisible="True"
+               x:Name="Pyt1">
+            <Frame BackgroundColor="White"
+                   CornerRadius="30">
+                <ScrollView>
+                    <StackLayout VerticalOptions="StartAndExpand"
+                     Padding="5"
+                     BackgroundColor="White">
+                        <Label Text="Stadiony - Test"
+                   FontAttributes="Bold"
+                   FontSize="Large"
+                   TextColor="Black"
+                   Opacity="1"
+                   />
+                        <StackLayout VerticalOptions="Start">
+                            <Label Margin="5,5,5,5"
+                   Opacity="1"
+                   Text="Jak nazywał się pierwszy stadion FC Barcelony?"
+                   TextColor="Black"/>
+                            <input:CheckBox Text="Stadion Casanovas Hotel" 
+                                    TextColor="Black"
+                                    x:Name="wrong1"/>
+                            <input:CheckBox Text="Velodromo de la Bonanova"
+                                    TextColor="Black"
+                                    x:Name="correct"/>
+                            <input:CheckBox Text="Camp de Les Corts"
+                                    TextColor="Black"
+                                    x:Name="wrong2"/>
+                        </StackLayout>
+                        <Button Text="Następne pytanie ->"
+                        HorizontalOptions="End"
+                        FontAttributes="Bold"
+                        Clicked="StartPyt2_Clicked"/>
+                    </StackLayout>
+                </ScrollView>
+            </Frame>
+        </Frame>
+        <Frame Margin="10,5,10,5"
+               IsClippedToBounds="False"
+               BorderColor="Black"
+               HasShadow="True"
+               CornerRadius="30"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="CenterAndExpand"
+               BackgroundColor="#edbb00"
+               IsVisible="False"
+               x:Name="Pyt2">
+            <Frame BackgroundColor="White"
+                   CornerRadius="30">
+                <ScrollView>
+                <StackLayout VerticalOptions="StartAndExpand"
+                     Padding="5"
+                     BackgroundColor="White">
+                    <Label Text="Stadiony - Test"
+                   FontAttributes="Bold"
+                   FontSize="Large"
+                   TextColor="Black"
+                   Opacity="1"
+                   />
+                    <StackLayout VerticalOptions="Start">
+                        <Label Margin="5,5,5,5"
+                   Opacity="1"
+                   Text="Jak nazywa się obecny stadion Barcy?"
+                   TextColor="Black"/>
+                        <input:CheckBox Text="Velodromo de la Bonanova" 
+                                    TextColor="Black"
+                                    x:Name="Pyt2w" />
+                        <input:CheckBox Text="Stadion Calle Industrial"
+                                    TextColor="Black"
+                                    x:Name="Pyt2ww"/>
+                        <input:CheckBox Text="Camp Nou"
+                                    TextColor="Black"
+                                    x:Name="Pyt2c"/>
+                    </StackLayout>
+                    <Button Text="Następne pytanie ->"
+                        FontAttributes="Bold"
+                        HorizontalOptions="End"
+                        Clicked="StartPyt3_Clicked"/>
+                </StackLayout>
+                </ScrollView>
+            </Frame>
+        </Frame>
+        <Frame Margin="10,5,10,5"
+               IsClippedToBounds="False"
+               BorderColor="Black"
+               HasShadow="True"
+               BackgroundColor="#edbb00"
+               CornerRadius="30"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="CenterAndExpand"
+               IsVisible="False"
+               x:Name="Pyt3">
+            <Frame BackgroundColor="White"
+                   CornerRadius="30">
+                <ScrollView>
+                <StackLayout VerticalOptions="StartAndExpand"
+                     Padding="5"
+                     BackgroundColor="White">
+                    <Label Text="Stadiony - Test"
+                   FontAttributes="Bold"
+                   FontSize="Large"
+                   TextColor="Black"
+                   Opacity="1"
+                   />
+                    <StackLayout VerticalOptions="Start">
+                        <Label Margin="5,5,5,5"
+                   Opacity="1"
+                   Text="Przeciwko komu Barca zagrała mecz inauguracyjny na Camp Nou?"
+                   TextColor="Black"/>
+                        <input:CheckBox Text="Real Madrid" 
+                                    TextColor="Black"
+                                    x:Name="Pyt3w"
+                                    />
+                        <input:CheckBox Text="Espanyol Barcelona"
+                                    TextColor="Black"
+                                    x:Name="Pyt3ww"/>
+                        <input:CheckBox Text="Reprezentacja Warszawy"
+                                    TextColor="Black"
+                                    x:Name="Pyt3c"/>
+                    </StackLayout>
+                    <Button Text="Sprawdź odpowiedzi"
+                        FontAttributes="Bold"
+                        HorizontalOptions="End"
+                        Clicked="Check_Clicked"/>
+                </StackLayout>
+                </ScrollView>
+            </Frame>
+        </Frame>
+    </Grid>
+</ContentPage>

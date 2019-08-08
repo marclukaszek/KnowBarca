@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="KnowBarca.Pages.Trophies.TrophiesPage"
+             NavigationPage.HasNavigationBar="False">
+    <Grid>
+        <Image x:Name="background"
+           Aspect="Fill" />
+        <Frame Margin="10,5,10,5"
+               IsClippedToBounds="False"
+               BorderColor="Black"
+               HasShadow="True"
+               CornerRadius="30"
+                              BackgroundColor="#edbb00"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="CenterAndExpand">
+            <Frame BackgroundColor="White"
+                   CornerRadius="30">
+                <ScrollView>
+                    <StackLayout VerticalOptions="StartAndExpand"
+                     Padding="5"
+                     BackgroundColor="White">
+
+                        <Label Text="4. Trofea"
+                   FontAttributes="Bold"
+                   FontSize="Large"
+                   TextColor="Black"
+                   Opacity="1"
+                   />
+                        <StackLayout>
+                            <Image x:Name="copa"
+                           Aspect="AspectFill"
+                               Margin="10,0,10,0"/>
+                        </StackLayout>
+                        <Label Margin="5,5,5,5"
+                       Text="    Barcelona jest jednym z najbardziej utytułowanych zespołów na świecie, co potwierdza długa i imponująca lista trofeów. Mało który klub może pochwalić się taką gablotą. Najważniejszymi pucharami, jakie można podziwiać w klubowym muzeum, są pięciokrotnie zdobyty Puchar Europy (Londyn 1992, 2011; Paryż 2006; Rzym 2009; Berlin 2015) i trzykrotnie klubowe mistrzostwo świata (2009, 2011, 2015). Barcy udało się także wygrać krajową ligę 26 razy, jest też rekordzistą w liczbie zwycięstw rozgrywkach Pucharu Króla (30)."
+                       TextColor="Black"/>
+                        <Button Text="TEST"
+                       HorizontalOptions="Center"
+                       VerticalOptions="End"
+                       FontSize="Medium"
+                       TextColor="Black"
+                            FontAttributes="Bold"
+                            Clicked="TrophiesTest_Clicked"
+                       ></Button>
+
+                    </StackLayout>
+                </ScrollView>
+            </Frame>
+        </Frame>
+    </Grid>
+</ContentPage>

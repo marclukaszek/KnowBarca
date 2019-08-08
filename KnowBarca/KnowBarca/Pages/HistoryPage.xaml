@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="KnowBarca.Pages.HistoryPage" 
+             NavigationPage.HasNavigationBar="False">
+    <Grid>
+        <Image x:Name="background"
+           Aspect="Fill" />
+        <Frame Margin="10,5,10,5"
+               IsClippedToBounds="False"
+               BorderColor="Black"
+               HasShadow="True"
+               BackgroundColor="#edbb00"
+               CornerRadius="30"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="CenterAndExpand">
+            <Frame BackgroundColor="White"
+                   CornerRadius="30">
+                <ScrollView>
+            <StackLayout VerticalOptions="StartAndExpand"
+                     BackgroundColor="White">
+                <Label Text="Poznaj historię"
+                   FontAttributes="Bold"
+                   FontSize="Large"
+                   TextColor="Black"
+                   Opacity="1"
+                   />
+                <StackLayout Grid.Column="0"
+                         Grid.Row="0">
+                    <Image x:Name="Barca1903"
+                   Margin="5,0,5,0"
+                   Opacity="1"
+                   />
+                </StackLayout>
+                <Label Margin="5,5,5,5"
+                   Opacity="1"
+                   Text="    W tym trybie zdobędziesz wiedzę z 5 różnych działów związanych z FC Barceloną:"
+                   TextColor="Black"/>
+                <Label Margin="5,5,5,5"
+                   Opacity="1"
+                   Text="- Historia,"
+                   TextColor="Black"/>
+                <Label Margin="5,5,5,5"
+                   Opacity="1"
+                   Text="- Stadiony,"
+                   TextColor="Black"/>
+                <Label Margin="5,5,5,5"
+                   Opacity="1"
+                   Text="- Herb i barwy,"
+                   TextColor="Black"/>
+                <Label Margin="5,5,5,5"
+                   Opacity="1"
+                   Text="- Trofea,"
+                   TextColor="Black"/>
+                <Label Margin="5,5,5,5"
+                   Opacity="1"
+                   Text="- Transfery."
+                   TextColor="Black"/>
+                <Label Margin="5,5,5,5"
+                   Opacity="1"
+                   Text="Po każdym z działów zostanie Ci zadane 3 pytania. Aby rozpocząć kolejny dział wszystkie udzielone odpowiedzi muszą być poprawne, w przeciwnym razie, test zostanie powtórzony od ostatniego niezaliczonego działu."
+                   TextColor="Black"/>
+                
+                       
+                       
+                       
+                       
+                       
+                <Button Text="Rozpocznij"
+                       HorizontalOptions="Center"
+                       VerticalOptions="End"
+                       FontSize="Medium"
+                       TextColor="Black"
+                        FontAttributes="Bold"
+                        Clicked="BeginningPage_Clicked"
+                        CornerRadius="30"
+                       ></Button>
+            </StackLayout>
+                </ScrollView>
+            </Frame>
+        </Frame>
+    </Grid>
+</ContentPage>
