@@ -98,34 +98,85 @@
                      BackgroundColor="White"
                                  >
                         <StackLayout VerticalOptions="Start">
-                    <Label Margin="5,5,5,5"
+                            <Label Margin="5,5,5,5"
                    Opacity="1"
                    Text="Który z zawodników był najdroższym z transferów FCB?"
                    TextColor="Black" FontAttributes="Bold"/>
-                    <input:CheckBox Text="O. Dembele" 
+                            <input:CheckBox Text="O. Dembele" 
                                     TextColor="Black"
                                     x:Name="w3"
                                     CheckChanged="W3_CheckChanged"
                                     />
-                    <input:CheckBox Text="A. Griezmann"
+                            <input:CheckBox Text="A. Griezmann"
                                     TextColor="Black"
                                     x:Name="ww3"
                                     CheckChanged="Ww3_CheckChanged"/>
-                    <input:CheckBox Text="P. Couthinho"
+                            <input:CheckBox Text="P. Couthinho"
                                     TextColor="Black"
                                     x:Name="c3"
                                     CheckChanged="C3_CheckChanged"/>
-                </StackLayout>
-                        
+                        </StackLayout>
+
                     </StackLayout>
-        </Frame>
+                </Frame>
+                <Frame Margin="10,5,10,5"
+               IsClippedToBounds="False"
+               BorderColor="Black"
+               HasShadow="True"
+               CornerRadius="30"
+               BackgroundColor="#edbb00"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="CenterAndExpand"
+               IsVisible="false"
+                       x:Name="nicknameFrame">
+                    <Frame BackgroundColor="White"
+                   CornerRadius="30">
+                        <StackLayout VerticalOptions="StartAndExpand"
+                     BackgroundColor="White"
+                                 >
+
+                            <Grid ColumnSpacing="5">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="2.5*"/>
+                                </Grid.ColumnDefinitions>
+                                <Label Text="Nickname"
+                           TextColor="Black"
+                           Margin="0,0,0,0"
+                       IsVisible="False"
+                           FontSize="Medium"
+                       x:Name="nicknameLabel"
+                           VerticalOptions="Center"
+                           Grid.Column="0"/>
+                                <Entry
+                   FontSize="Medium"
+                   Placeholder="Podaj swój nickname"
+                   IsVisible="False"
+                   x:Name="nicknameEntry"
+                    VerticalOptions="Center"
+                    Grid.Column="1"/>
+                            </Grid>
+                        </StackLayout>
+                    </Frame>
+                </Frame>
                 <Button Text="Sprawdź odpowiedzi"
                                 Clicked="QuizSolved" 
                         Margin="10,0,10,5"
                         BackgroundColor="#edbb00"
                         BorderColor="White"
                         BorderWidth="5"
-                        CornerRadius="5"/>
+                        CornerRadius="5"
+                        x:Name="QS1"/>
+                <Button Text="Sprawdź odpowiedzi"
+                                Clicked="QuizSolved2" 
+                        Margin="10,0,10,5"
+                        BackgroundColor="#edbb00"
+                        BorderColor="White"
+                        BorderWidth="5"
+                        CornerRadius="5"
+                        IsVisible="False"
+                        x:Name="QS2"/>
+
             </StackLayout>
         </ScrollView>
     </Grid>
