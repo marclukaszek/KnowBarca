@@ -3,16 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using SQLite;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using KnowBarca.Classes;
 
 namespace KnowBarca.Pages.Quiz
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class QuizPage : ContentPage
     {
-        int i = 0;
+        int scorev = 0;
 
         public QuizPage()
         {
@@ -23,23 +25,41 @@ namespace KnowBarca.Pages.Quiz
 
         async void QuizSolved(object sender, EventArgs e)
         {
-            i = 0;
+            scorev = 0;
             Mark();
-            string istr = i.ToString();
-            await DisplayAlert("Twój wynik to: ", istr+"/3", "OK");
+            string istr = scorev.ToString();
+            nicknameFrame.IsVisible = true;
+            nicknameEntry.IsVisible = true;
+            nicknameLabel.IsVisible = true;
+            QS1.IsVisible = false;
+            QS2.IsVisible = true;
+            //await DisplayAlert("Twój wynik to: ", istr+"/3", "OK");
+        }
+        void QuizSolved2(object sender, EventArgs e)
+        {
+            Score score = new Score()
+            {
+                Nickname = nicknameEntry.Text,
+                ScoreVal = scorev
+            };
+            using (SQLiteConnection conn = new SQLiteConnection(App.FilePath))
+            {
+                conn.CreateTable<Score>();
+                int rowsAdded = conn.Insert(score);
+            }
         }
 
         public int Mark()
         {
             if (c1.IsChecked)
-                i++;
+                scorev++;
             if (c2.IsChecked)
-                i++;
+                scorev++;
             if (c3.IsChecked)
-                i++;
+                scorev++;
 
 
-            return i;
+            return scorev;
         }
 
         private void W1_CheckChanged(object sender, EventArgs e)

@@ -25,8 +25,8 @@ C:\Users\Marcin\source\repos\KnowBarca\KnowBarca\KnowBarca\obj\Debug\netstandard
 C:\Users\Marcin\source\repos\KnowBarca\KnowBarca\KnowBarca\obj\Debug\netstandard2.0\KnowBarca.csproj.CoreCompileInputs.cache
 C:\Users\Marcin\source\repos\KnowBarca\KnowBarca\KnowBarca\obj\Debug\netstandard2.0\KnowBarca.AssemblyInfoInputs.cache
 C:\Users\Marcin\source\repos\KnowBarca\KnowBarca\KnowBarca\obj\Debug\netstandard2.0\KnowBarca.AssemblyInfo.cs
-C:\Users\Marcin\source\repos\KnowBarca\KnowBarca\KnowBarca\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\Marcin\source\repos\KnowBarca\KnowBarca\KnowBarca\obj\Debug\netstandard2.0\KnowBarca.dll
 C:\Users\Marcin\source\repos\KnowBarca\KnowBarca\KnowBarca\obj\Debug\netstandard2.0\ref\KnowBarca.dll
 C:\Users\Marcin\source\repos\KnowBarca\KnowBarca\KnowBarca\obj\Debug\netstandard2.0\KnowBarca.pdb
 C:\Users\Marcin\source\repos\KnowBarca\KnowBarca\KnowBarca\obj\Debug\netstandard2.0\KnowBarca.csprojAssemblyReference.cache
+C:\Users\Marcin\source\repos\KnowBarca\KnowBarca\KnowBarca\obj\Debug\netstandard2.0\XamlC.stamp

@@ -144,6 +144,10 @@
             "Xamarin.Forms.InputKit": {
               "target": "Package",
               "version": "[3.0.12, )"
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.5.231, )"
             }
           },
           "imports": [
