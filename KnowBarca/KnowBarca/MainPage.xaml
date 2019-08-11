@@ -40,6 +40,14 @@
                                 CornerRadius="30"
                                 TextColor="Black"
                                 FontAttributes="Bold"/>
+                    <Button Text="Scores" 
+                VerticalOptions="Center"
+                Margin="5,5,5,5"
+                Clicked="Scores_Clicked"
+                                BackgroundColor="White"
+                                CornerRadius="30"
+                                TextColor="Black"
+                                FontAttributes="Bold"/>
 
                     <Button Text="Autor" 
                 Margin="5,5,5,5"

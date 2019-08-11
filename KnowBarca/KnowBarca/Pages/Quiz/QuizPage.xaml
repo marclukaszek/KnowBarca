@@ -127,6 +127,258 @@
                BackgroundColor="#edbb00"
                HorizontalOptions="CenterAndExpand"
                VerticalOptions="CenterAndExpand"
+               IsVisible="True"
+               x:Name="Pyt4">
+                    <StackLayout VerticalOptions="StartAndExpand"
+                     Padding="5"
+                     BackgroundColor="White"
+                                 >
+                        <StackLayout VerticalOptions="Start">
+                            <Label Margin="5,5,5,5"
+                   Opacity="1"
+                   Text="Jak nazywa się obecny trener FC Barcelony?"
+                   TextColor="Black" FontAttributes="Bold"/>
+                            <input:CheckBox Text="Ernesto Valverde" 
+                                    TextColor="Black"
+                                    x:Name="c4"
+                                    CheckChanged="C4_CheckChanged"
+                                    />
+                            <input:CheckBox Text="Josep Maria Bartomeu"
+                                    TextColor="Black"
+                                    x:Name="ww4"
+                                    CheckChanged="Ww4_CheckChanged"/>
+                            <input:CheckBox Text="Lionel Messi"
+                                    TextColor="Black"
+                                    x:Name="w4"
+                                    CheckChanged="W4_CheckChanged"/>
+                        </StackLayout>
+
+                    </StackLayout>
+                </Frame>
+                <Frame Margin="10,5,10,5"
+               IsClippedToBounds="False"
+               BorderColor="Black"
+               HasShadow="True"
+               CornerRadius="30"
+               BackgroundColor="#edbb00"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="CenterAndExpand"
+               IsVisible="True"
+               x:Name="Pyt5">
+                    <StackLayout VerticalOptions="StartAndExpand"
+                     Padding="5"
+                     BackgroundColor="White"
+                                 >
+                        <StackLayout VerticalOptions="Start">
+                            <Label Margin="5,5,5,5"
+                   Opacity="1"
+                   Text="Kto był trenerem legendarnego Dream Team?"
+                   TextColor="Black" FontAttributes="Bold"/>
+                            <input:CheckBox Text="Johan Cruyff" 
+                                    TextColor="Black"
+                                    x:Name="c5"
+                                    CheckChanged="C5_CheckChanged"
+                                    />
+                            <input:CheckBox Text="Louis van Gaal"
+                                    TextColor="Black"
+                                    x:Name="ww5"
+                                    CheckChanged="Ww5_CheckChanged"/>
+                            <input:CheckBox Text="Bobby Robson"
+                                    TextColor="Black"
+                                    x:Name="w5"
+                                    CheckChanged="W5_CheckChanged"/>
+                        </StackLayout>
+
+                    </StackLayout>
+                </Frame>
+                <Frame Margin="10,5,10,5"
+               IsClippedToBounds="False"
+               BorderColor="Black"
+               HasShadow="True"
+               CornerRadius="30"
+               BackgroundColor="#edbb00"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="CenterAndExpand"
+               IsVisible="True"
+               x:Name="Pyt6">
+                    <StackLayout VerticalOptions="StartAndExpand"
+                     Padding="5"
+                     BackgroundColor="White"
+                                 >
+                        <StackLayout VerticalOptions="Start">
+                            <Label Margin="5,5,5,5"
+                   Opacity="1"
+                   Text="Jak nazywa się prezes FC Barcelony za czasów którego zespół wygrał Ligę Mistrzów dwukrotnie?"
+                   TextColor="Black" FontAttributes="Bold"/>
+                            <input:CheckBox Text="Sandro Rosell" 
+                                    TextColor="Black"
+                                    x:Name="w6"
+                                    CheckChanged="W6_CheckChanged"
+                                    />
+                            <input:CheckBox Text="Joan Laporta"
+                                    TextColor="Black"
+                                    x:Name="c6"
+                                    CheckChanged="C6_CheckChanged"/>
+                            <input:CheckBox Text="Josep Maria Bartomeu"
+                                    TextColor="Black"
+                                    x:Name="ww6"
+                                    CheckChanged="Ww6_CheckChanged"/>
+                        </StackLayout>
+
+                    </StackLayout>
+                </Frame>
+                <Frame Margin="10,5,10,5"
+               IsClippedToBounds="False"
+               BorderColor="Black"
+               HasShadow="True"
+               CornerRadius="30"
+               BackgroundColor="#edbb00"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="CenterAndExpand"
+               IsVisible="True"
+               x:Name="Pyt7">
+                    <StackLayout VerticalOptions="StartAndExpand"
+                     Padding="5"
+                     BackgroundColor="White"
+                                 >
+                        <StackLayout VerticalOptions="Start">
+                            <Label Margin="5,5,5,5"
+                   Opacity="1"
+                   Text="Który zawodnik wystąpił dla FCB najwięcej razy?"
+                   TextColor="Black" FontAttributes="Bold"/>
+                            <input:CheckBox Text="Carles Puyol" 
+                                    TextColor="Black"
+                                    x:Name="w7"
+                                    CheckChanged="W7_CheckChanged"
+                                    />
+                            <input:CheckBox Text="Xavi Hernandez"
+                                    TextColor="Black"
+                                    x:Name="c7"
+                                    CheckChanged="C7_CheckChanged"/>
+                            <input:CheckBox Text="Lionel Messi"
+                                    TextColor="Black"
+                                    x:Name="ww7"
+                                    CheckChanged="WW7_CheckChanged"/>
+                        </StackLayout>
+
+                    </StackLayout>
+                </Frame>
+                <Frame Margin="10,5,10,5"
+               IsClippedToBounds="False"
+               BorderColor="Black"
+               HasShadow="True"
+               CornerRadius="30"
+               BackgroundColor="#edbb00"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="CenterAndExpand"
+               IsVisible="True"
+               x:Name="Pyt8">
+                    <StackLayout VerticalOptions="StartAndExpand"
+                     Padding="5"
+                     BackgroundColor="White"
+                                 >
+                        <StackLayout VerticalOptions="Start">
+                            <Label Margin="5,5,5,5"
+                   Opacity="1"
+                   Text="Kto był najdłużej urzędującym prezesem klubu?"
+                   TextColor="Black" FontAttributes="Bold"/>
+                            <input:CheckBox Text="Joan Laporta" 
+                                    TextColor="Black"
+                                    x:Name="w8"
+                                    CheckChanged="w8_CheckChanged"
+                                    />
+                            <input:CheckBox Text="Joan Gamper"
+                                    TextColor="Black"
+                                    x:Name="ww8"
+                                    CheckChanged="Ww8_CheckChanged"/>
+                            <input:CheckBox Text="Josep Lluis Nunez"
+                                    TextColor="Black"
+                                    x:Name="c8"
+                                    CheckChanged="c8_CheckChanged"/>
+                        </StackLayout>
+
+                    </StackLayout>
+                </Frame>
+                <Frame Margin="10,5,10,5"
+               IsClippedToBounds="False"
+               BorderColor="Black"
+               HasShadow="True"
+               CornerRadius="30"
+               BackgroundColor="#edbb00"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="CenterAndExpand"
+               IsVisible="True"
+               x:Name="Pyt9">
+                    <StackLayout VerticalOptions="StartAndExpand"
+                     Padding="5"
+                     BackgroundColor="White"
+                                 >
+                        <StackLayout VerticalOptions="Start">
+                            <Label Margin="5,5,5,5"
+                   Opacity="1"
+                   Text="W którym z sezonów Barca strzeliła barmkę w każdym wyjazdowym meczu?"
+                   TextColor="Black" FontAttributes="Bold"/>
+                            <input:CheckBox Text="2009/2010" 
+                                    TextColor="Black"
+                                    x:Name="w9"
+                                    CheckChanged="w9_CheckChanged"
+                                    />
+                            <input:CheckBox Text="2010/2011"
+                                    TextColor="Black"
+                                    x:Name="c9"
+                                    CheckChanged="c9_CheckChanged"/>
+                            <input:CheckBox Text="2012/2013"
+                                    TextColor="Black"
+                                    x:Name="ww9"
+                                    CheckChanged="Ww9_CheckChanged"/>
+                        </StackLayout>
+
+                    </StackLayout>
+                </Frame>
+                <Frame Margin="10,5,10,5"
+               IsClippedToBounds="False"
+               BorderColor="Black"
+               HasShadow="True"
+               CornerRadius="30"
+               BackgroundColor="#edbb00"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="CenterAndExpand"
+               IsVisible="True"
+               x:Name="Pyt10">
+                    <StackLayout VerticalOptions="StartAndExpand"
+                     Padding="5"
+                     BackgroundColor="White"
+                                 >
+                        <StackLayout VerticalOptions="Start">
+                            <Label Margin="5,5,5,5"
+                   Opacity="1"
+                   Text="Kto w 2006 strzelił zwycięskiego gola w finale Ligi Mistzów?"
+                   TextColor="Black" FontAttributes="Bold"/>
+                            <input:CheckBox Text="Ronald Koeman" 
+                                    TextColor="Black"
+                                    x:Name="w10"
+                                    CheckChanged="w10_CheckChanged"
+                                    />
+                            <input:CheckBox Text="Henrik Larsson"
+                                    TextColor="Black"
+                                    x:Name="ww10"
+                                    CheckChanged="Ww10_CheckChanged"/>
+                            <input:CheckBox Text="Juliano Belletti"
+                                    TextColor="Black"
+                                    x:Name="c10"
+                                    CheckChanged="c10_CheckChanged"/>
+                        </StackLayout>
+
+                    </StackLayout>
+                </Frame>
+                <Frame Margin="10,5,10,5"
+               IsClippedToBounds="False"
+               BorderColor="Black"
+               HasShadow="True"
+               CornerRadius="30"
+               BackgroundColor="#edbb00"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="CenterAndExpand"
                IsVisible="false"
                        x:Name="nicknameFrame">
                     <Frame BackgroundColor="White"

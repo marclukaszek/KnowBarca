@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="KnowBarca.Pages.Scoreboard.ScoreboardPage"
+             NavigationPage.HasNavigationBar="False">
+    <Grid>
+        <Image x:Name="background"
+           Aspect="Fill" />
+        <Frame Margin="10,5,10,5"
+               IsClippedToBounds="False"
+               BorderColor="Black"
+               HasShadow="True"
+               BackgroundColor="#edbb00"
+               CornerRadius="30"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="CenterAndExpand">
+            <Frame BackgroundColor="White"
+                   CornerRadius="30">
+                <ScrollView>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="2*" />
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="3*"/>
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+
+                        <Label Grid.Row="0" Grid.ColumnSpan="3" Text="Highscore Table" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Large" TextColor="Black" VerticalTextAlignment="Center"/>
+                        <Label Grid.Row="1" Grid.Column="0" Text="Place" VerticalOptions="Center" HorizontalOptions="Center" TextColor="Black"/>
+                        <Label Grid.Row="1" Grid.Column="1" Text="Nickname" VerticalOptions="Center" HorizontalOptions="Center" TextColor="Black"/>
+                        <Label Grid.Row="1" Grid.Column="2" Text="Points" VerticalOptions="Center" HorizontalOptions="Center" TextColor="Black"/>
+                        <ListView xmlns="http://xamarin.com/schemas/2014/forms" x:Name="scoreListViewPlace" VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="2" Grid.Column="0">
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <ViewCell>
+                                        <Label Text="{Binding}"
+                                               TextColor="Black"
+                                               VerticalOptions="Center"
+                                               HorizontalOptions="Center"
+                                               IsEnabled="False"
+                                               FontAttributes="Bold"/>
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                        <ListView x:Name="scoreListView" VerticalOptions="Center" HorizontalOptions="Center"  Grid.Column="1" Grid.Row="2">
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <ViewCell>
+                                        <Label Text="{Binding Nickname}"
+                                               TextColor="Black"
+                                               VerticalOptions="Center"
+                                               HorizontalOptions="Center"
+                                               IsEnabled="False" />
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                        <ListView x:Name="scoreListViewScore" Grid.Column="2" Grid.Row="2">
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <ViewCell>
+                                        <Label Text="{Binding ScoreVal}" 
+                                               TextColor="Black"
+                                               IsEnabled="False"
+                                               VerticalOptions="Center"
+                                               HorizontalOptions="Center"/>
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </Grid>
+                </ScrollView>
+            </Frame>
+        </Frame>
+    </Grid>
+</ContentPage>

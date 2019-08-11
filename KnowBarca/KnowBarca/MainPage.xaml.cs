@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using KnowBarca.Pages;
 using KnowBarca.Pages.Quiz;
+using KnowBarca.Pages.Scoreboard;
 
 namespace KnowBarca
 {
@@ -31,6 +32,10 @@ namespace KnowBarca
         async void Play_Clicked(object sender, System.EventArgs e)
         {
             await Navigation.PushAsync(new QuizPage());
+        }
+        async void Scores_Clicked(object sender, System.EventArgs e)
+        {
+            await Navigation.PushAsync(new ScoreboardPage());
         }
 
         async void Author_Clicked(object sender, EventArgs e)
