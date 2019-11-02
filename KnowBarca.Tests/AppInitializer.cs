@@ -8,11 +8,13 @@ namespace KnowBarca.Tests
     {
         public static IApp StartApp(Platform platform)
         {
+            string path = @"C:\Users\Marcin\source\repos\KnowBarca\KnowBarca\KnowBarca.Android\bin\Release\com.yama.knowbarca.apk";
+
             if (platform == Platform.Android)
             {
                 return ConfigureApp
                     .Android
-                    .InstalledApp("com.yama.knowbarca")
+                    .ApkFile(path)
                     .StartApp();
             }
 
