@@ -33,9 +33,15 @@
     <PackageReference Include="Xamarin.UITest" Version="3.0.0" />
     <PackageReference Include="NUnitTestAdapter" Version="2.2.0" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-  </ItemGroup>
-  <ItemGroup>
+    <Compile Include="PageBase.cs" />
+    <Compile Include="Pages\Author\AuthorPage.cs" />
+    <Compile Include="Pages\History\HistoryPage.cs" />
+    <Compile Include="Pages\MainPage.cs" />
+    <Compile Include="Pages\PageContainer.cs" />
+    <Compile Include="Pages\Quiz\QuizPage.cs" />
+    <Compile Include="Pages\Scoreboard\ScoreboardPage.cs" />
     <Compile Include="Tests.cs" />
     <Compile Include="AppInitializer.cs" />
   </ItemGroup>

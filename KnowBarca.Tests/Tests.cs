@@ -5,29 +5,63 @@ using NUnit.Framework;
 using Xamarin.UITest;
 using Xamarin.UITest.Queries;
 
+
 namespace KnowBarca.Tests
 {
-    [TestFixture(Platform.Android)]
-    public class Tests
+    [TestFixture]
+    public class Tests : PageBase
     {
-        IApp app;
-        Platform platform;
-
-        public Tests(Platform platform)
+        [TestCase(Platform.Android)]
+        [Test(Description = "Chech if application starts")]
+        public void ApplicationStart(Platform platform)
         {
-            this.platform = platform;
+            if (!Driver.Initialize(platform)) return;
+            MainPage.MenuExist();
+            MainPage.LogoExist();
+            MainPage.FooterExist();
         }
-
-        [SetUp]
-        public void BeforeEachTest()
+        [TestCase(Platform.Android)]
+        [Test(Description = "Chech if application starts")]
+        public void AllPagesOpens(Platform platform)
         {
-            app = AppInitializer.StartApp(platform);
+            if (!Driver.Initialize(platform)) return;
+            MainPage.MenuExist();
+            MainPage.GoToHistoryPage();
+            HistoryPage.HistoryPageOpens();
+            MainPage.GoToQuizPage();
+            QuizPage.QuizPageOpens();
+            MainPage.GoToScoreboardPage();
+            ScoreboardPage.ScoreboardPageOpens();
+            MainPage.GoToAuthorPage();
+            AuthorPage.AuthorPageOpens();
         }
-
-        [Test]
-        public void WelcomeTextIsDisplayed()
+        /*
+        [TestCase(Platform.Android)]
+        [Test(Description = "Chech if application starts")]
+        public void HistoryPartWorks(Platform platform)
         {
-            app.Tap(c => c.Marked("Quiz"));
+            if (!Driver.Initialize(platform)) return;
+            MainPage.MenuExist();
+            MainPage.LogoExist();
+            MainPage.FooterExist();
         }
+        [TestCase(Platform.Android)]
+        [Test(Description = "Chech if application starts")]
+        public void QuizPartWorks(Platform platform)
+        {
+            if (!Driver.Initialize(platform)) return;
+            MainPage.MenuExist();
+            MainPage.LogoExist();
+            MainPage.FooterExist();
+        }
+        [TestCase(Platform.Android)]
+        [Test(Description = "Chech if application starts")]
+        public void ScoreboardWorks(Platform platform)
+        {
+            if (!Driver.Initialize(platform)) return;
+            MainPage.MenuExist();
+            MainPage.LogoExist();
+            MainPage.FooterExist();
+        }*/
     }
 }

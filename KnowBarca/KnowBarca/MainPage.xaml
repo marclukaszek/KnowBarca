@@ -14,8 +14,9 @@
            Aspect="Fill" />
         <StackLayout VerticalOptions="CenterAndExpand">
             <Image x:Name="logo"
-                   Aspect="AspectFit"/>
-            <Frame 
+                   Aspect="AspectFit"
+                   AutomationId="Logo"/>
+            <Frame AutomationId="MenuFrame"
                    CornerRadius="30"
                    Margin="30,5,30,5"
                    BackgroundColor="#edbb00">
@@ -23,7 +24,7 @@
                 <StackLayout 
                                  BackgroundColor="#edbb00"
                              >
-                    <Button Text="Poznaj historię" 
+                    <Button Text="Learn history" 
                 VerticalOptions="Center"
                 Margin="5,5,5,5"
                 Clicked="History_Clicked"
@@ -31,7 +32,8 @@
                                 CornerRadius="30"
                                 TextColor="Black"
                                 FontAttributes="Bold"
-                                Opacity="1"/>
+                                Opacity="1"
+                            AutomationId="HistoryButton"/>
                     <Button Text="Quiz" 
                 VerticalOptions="Center"
                 Margin="5,5,5,5"
@@ -39,15 +41,17 @@
                                 BackgroundColor="White"
                                 CornerRadius="30"
                                 TextColor="Black"
-                                FontAttributes="Bold"/>
-                    <Button Text="Scores" 
+                                FontAttributes="Bold"
+                            AutomationId="QuizButton"/>
+                    <Button Text="Scoreboard" 
                 VerticalOptions="Center"
                 Margin="5,5,5,5"
                 Clicked="Scores_Clicked"
                                 BackgroundColor="White"
                                 CornerRadius="30"
                                 TextColor="Black"
-                                FontAttributes="Bold"/>
+                                FontAttributes="Bold"
+                            AutomationId="ScoreboardButton"/>
 
                     <Button Text="Autor" 
                 Margin="5,5,5,5"
@@ -55,13 +59,15 @@
                                 BackgroundColor="White"
                                 CornerRadius="30"
                                 TextColor="Black"
-                                FontAttributes="Bold"/>
+                                FontAttributes="Bold"
+                            AutomationId="AuthorButton"/>
                 </StackLayout>
             </Frame>
         </StackLayout>
         <Label Text="Know Barca 2019 project"
                VerticalOptions="EndAndExpand"
                HorizontalOptions="Center"
-               TextColor="White" />
+               TextColor="White"
+               AutomationId="Footer"/>
     </Grid>
 </ContentPage>
