@@ -20,7 +20,7 @@ namespace KnowBarca.Tests.Pages
         }
         public void GoToBeginningTest()
         {
-            Driver.app.ScrollDown();
+            ScrollScreenDown();
             WaitFor(TestButton);
             Tap(TestButton);
         }

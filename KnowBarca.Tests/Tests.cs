@@ -12,7 +12,7 @@ namespace KnowBarca.Tests
     public class Tests : PageBase
     {
         [TestCase(Platform.Android)]
-        [Test(Description = "Chech if application starts")]
+        [Test(Description = "Check if application starts")]
         public void ApplicationStart(Platform platform)
         {
             if (!Driver.Initialize(platform)) return;
@@ -21,7 +21,7 @@ namespace KnowBarca.Tests
             MainPage.FooterExist();
         }
         [TestCase(Platform.Android)]
-        [Test(Description = "Chech if application starts")]
+        [Test(Description = "Check if all menu page are opening")]
         public void AllPagesOpens(Platform platform)
         {
             if (!Driver.Initialize(platform)) return;
@@ -36,7 +36,7 @@ namespace KnowBarca.Tests
             AuthorPage.AuthorPageOpens();
         }
         [TestCase(Platform.Android)]
-        [Test(Description = "Chech if application starts")]
+        [Test(Description = "Check if History part logic works")]
         public void CheckHistoryLogic(Platform platform)
         {
             if (!Driver.Initialize(platform)) return;
@@ -50,33 +50,28 @@ namespace KnowBarca.Tests
             BeginningPageCorrect.GoToNextChapter();
             StadiumPage.StadiumPageOpens();
         }
-        /*
         [TestCase(Platform.Android)]
-        [Test(Description = "Chech if application starts")]
-        public void HistoryPartWorks(Platform platform)
+        [Test(Description = "Check if quiz logic works")]
+        public void CheckQuizLogic(Platform platform)
         {
             if (!Driver.Initialize(platform)) return;
-            MainPage.MenuExist();
-            MainPage.LogoExist();
-            MainPage.FooterExist();
+            MainPage.GoToQuizPage();
+            QuizPage.AnswerFor6points();
+            ScoreboardPage.CheckIfPlayerGet6Points();
         }
         [TestCase(Platform.Android)]
-        [Test(Description = "Chech if application starts")]
-        public void QuizPartWorks(Platform platform)
+        [Test(Description = "Check if scoreboard works")]
+        public void CheckScoreboardLogic(Platform platform)
         {
             if (!Driver.Initialize(platform)) return;
-            MainPage.MenuExist();
-            MainPage.LogoExist();
-            MainPage.FooterExist();
+            MainPage.GoToQuizPage();
+            QuizPage.AnswerFor10points();
+            ScoreboardPage.CheckIfPlayerGet10Points();
+            ScoreboardPage.GoBackToMenuAfterQuiz();
+            MainPage.GoToQuizPage();
+            QuizPage.AnswerFor0points();
+            ScoreboardPage.CheckIfPlayer2Get0Points();
         }
-        [TestCase(Platform.Android)]
-        [Test(Description = "Chech if application starts")]
-        public void ScoreboardWorks(Platform platform)
-        {
-            if (!Driver.Initialize(platform)) return;
-            MainPage.MenuExist();
-            MainPage.LogoExist();
-            MainPage.FooterExist();
-        }*/
+
     }
 }

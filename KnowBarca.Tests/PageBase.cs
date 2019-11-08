@@ -56,5 +56,9 @@ namespace KnowBarca.Tests
         {
             Driver.app.Back();
         }
+        protected void ScrollScreenDown()
+        {
+            Driver.app.DragCoordinates(200, 1150, 200, 40);
+        }
     }
 }
