@@ -78,6 +78,7 @@
                         FontAttributes="Bold"
                         Clicked="BeginningPage_Clicked"
                         CornerRadius="30"
+                        AutomationId="StartBeginningButton"
                        ></Button>
             </StackLayout>
                 </ScrollView>

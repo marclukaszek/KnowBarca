@@ -40,11 +40,12 @@
                             <input:CheckBox Text="Hans Gamper" 
                                     TextColor="Black"
                                     x:Name="correct"
-                                    
+                                    AutomationId="Bq1c"
                                     />
                             <input:CheckBox Text="Santiago Bernabeu"
                                     TextColor="Black"
-                                    x:Name="wrong1"/>
+                                    x:Name="wrong1"
+                                            AutomationId="Bq1w"/>
                             <input:CheckBox Text="Vincente Calderon"
                                     TextColor="Black"
                                     x:Name="wrong2"/>
@@ -87,14 +88,15 @@
                             <input:CheckBox Text="1890 r." 
                                     TextColor="Black"
                                     x:Name="Pyt2w"
-                                    
+                                    AutomationId="Bq2w"
                                     />
                             <input:CheckBox Text="1888 r."
                                     TextColor="Black"
                                     x:Name="Pyt2ww"/>
                             <input:CheckBox Text="1889 r."
                                     TextColor="Black"
-                                    x:Name="Pyt2c"/>
+                                    x:Name="Pyt2c"
+                                            AutomationId="Bq2c"/>
                         </StackLayout>
                         <Button Text="Następne pytanie ->"
                                 FontAttributes="Bold"
@@ -134,10 +136,12 @@
                             <input:CheckBox Text="Spotkanie znajomych" 
                                     TextColor="Black"
                                     x:Name="Pyt3w"
+                                            AutomationId="Bq3w"
                                     />
                             <input:CheckBox Text="Ogłoszenie w gazecie"
                                     TextColor="Black"
-                                    x:Name="Pyt3c"/>
+                                    x:Name="Pyt3c"
+                                            AutomationId="Bq3c"/>
                             <input:CheckBox Text="Zgłoszenie klubu w siedzibie ligi"
                                     TextColor="Black"
                                     x:Name="Pyt3ww"/>
@@ -145,7 +149,8 @@
                         <Button Text="Sprawdź odpowiedzi"
                                 FontAttributes="Bold"
                         HorizontalOptions="End"
-                        Clicked="Check_Clicked"/>
+                        Clicked="Check_Clicked"
+                                AutomationId="BCheckAns"/>
                     </StackLayout>
                 </ScrollView>
             </Frame>

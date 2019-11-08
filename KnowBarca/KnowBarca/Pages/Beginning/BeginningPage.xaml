@@ -52,6 +52,7 @@ Hans Gamper, znany w Katalonii jako Joan, przeprowadził sie do Barcelony w 1898
                        TextColor="Black"
                         FontAttributes="Bold"
                         Clicked="BeginningTest_Clicked"
+                                AutomationId="BeginningTestButton"
                        ></Button>
                     </StackLayout>
                 </ScrollView>
