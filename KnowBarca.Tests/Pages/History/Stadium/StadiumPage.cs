@@ -14,7 +14,6 @@ namespace KnowBarca.Tests.Pages
         public void StadiumPageOpens()
         {
             WaitFor(StadiumPageId);
-            Back();
         }
     }
 }

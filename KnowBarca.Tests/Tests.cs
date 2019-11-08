@@ -45,7 +45,7 @@ namespace KnowBarca.Tests
             BeginningPage.GoToBeginningTest();
             BeginningPageTest.AnswerTestWrong();
             BeginningPage.GoToBeginningTest();
-            BeginningPageTest.AnswerTesCorrect();
+            BeginningPageTest.AnswerTestCorrect();
             BeginningPageCorrect.BeginningPageCorrectOpens();
             BeginningPageCorrect.GoToNextChapter();
             StadiumPage.StadiumPageOpens();

@@ -46,7 +46,7 @@ namespace KnowBarca.Tests.Pages
             WaitFor(AlertBox.OKButton);
             AlertBox.PressOK();
         }
-        public void AnswerTesCorrect()
+        public void AnswerTestCorrect()
         {
             WaitFor(Correct1Q);
             Tap(Correct1Q);
@@ -58,6 +58,7 @@ namespace KnowBarca.Tests.Pages
             Tap(GoTo3QButton);
             WaitFor(Correct3Q);
             Tap(Correct3Q);
+            WaitFor(CheckAnsButton);
             Tap(CheckAnsButton);
         }
     }

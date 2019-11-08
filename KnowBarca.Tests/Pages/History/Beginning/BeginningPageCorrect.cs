@@ -16,7 +16,6 @@ namespace KnowBarca.Tests.Pages
         public void BeginningPageCorrectOpens()
         {
             WaitFor(BeginningPageCorrectId);
-            Back();
         }
         public void GoToNextChapter()
         {
