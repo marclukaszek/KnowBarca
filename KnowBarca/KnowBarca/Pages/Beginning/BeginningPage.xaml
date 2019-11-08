@@ -5,7 +5,8 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="KnowBarca.Pages.BeginningPage"
-             NavigationPage.HasNavigationBar="False">
+             NavigationPage.HasNavigationBar="False"
+             AutomationId="BeginningPage">
     <Grid>
         <Image x:Name="background"
            Aspect="Fill" />

@@ -13,5 +13,10 @@ namespace KnowBarca.Tests.Pages
         public ScoreboardPage ScoreboardPage => new ScoreboardPage();
         public QuizPage QuizPage => new QuizPage();
         public HistoryPage HistoryPage => new HistoryPage();
+        public BeginningPage BeginningPage => new BeginningPage();
+        public BeginningPageTest BeginningPageTest => new BeginningPageTest();
+        public AlertBox AlertBox => new AlertBox();
+        public BeginningPageCorrect BeginningPageCorrect => new BeginningPageCorrect();
+        public StadiumPage StadiumPage => new StadiumPage();
     }
 }

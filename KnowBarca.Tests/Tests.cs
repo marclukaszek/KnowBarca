@@ -35,6 +35,21 @@ namespace KnowBarca.Tests
             MainPage.GoToAuthorPage();
             AuthorPage.AuthorPageOpens();
         }
+        [TestCase(Platform.Android)]
+        [Test(Description = "Chech if application starts")]
+        public void CheckHistoryLogic(Platform platform)
+        {
+            if (!Driver.Initialize(platform)) return;
+            MainPage.GoToHistoryPage();
+            HistoryPage.GoToBeginning();
+            BeginningPage.GoToBeginningTest();
+            BeginningPageTest.AnswerTestWrong();
+            BeginningPage.GoToBeginningTest();
+            BeginningPageTest.AnswerTesCorrect();
+            BeginningPageCorrect.BeginningPageCorrectOpens();
+            BeginningPageCorrect.GoToNextChapter();
+            StadiumPage.StadiumPageOpens();
+        }
         /*
         [TestCase(Platform.Android)]
         [Test(Description = "Chech if application starts")]

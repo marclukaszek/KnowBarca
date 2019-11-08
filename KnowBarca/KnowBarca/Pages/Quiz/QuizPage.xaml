@@ -36,7 +36,8 @@
                     <input:CheckBox Text="Manchester United F.C." 
                                     TextColor="Black"
                                     x:Name="w1"
-                                    CheckChanged="W1_CheckChanged"/>
+                                    CheckChanged="W1_CheckChanged"
+                                    AutomationId="q1w"/>
                     <input:CheckBox Text="Udinese Calcio"
                                     TextColor="Black"
                                     x:Name="ww1"
@@ -45,6 +46,7 @@
                                     TextColor="Black"
                                     x:Name="c1"
                                     CheckChanged="C1_CheckChanged"
+                                    AutomationId="q1c"
                                     />
                 </StackLayout>
             </StackLayout>
@@ -71,14 +73,16 @@
                     <input:CheckBox Text="60 mln €" 
                                     TextColor="Black"
                                     x:Name="c2"
-                                    CheckChanged="C2_CheckChanged"/>
+                                    CheckChanged="C2_CheckChanged"
+                                    AutomationId="q2c"/>
                             <input:CheckBox Text="69 mln €"
                                     TextColor="Black"
                                     x:Name="w2"
                                             CheckChanged="W2_CheckChanged"/>
                             <input:CheckBox Text="68 mln €"
                                     TextColor="Black"
-                                    x:Name="ww2" 
+                                    x:Name="ww2"
+                                            AutomationId="q2w"
                                             CheckChanged="Ww2_CheckChanged"/>
                         </StackLayout>
             </StackLayout>
@@ -106,6 +110,7 @@
                                     TextColor="Black"
                                     x:Name="w3"
                                     CheckChanged="W3_CheckChanged"
+                                            AutomationId="q3w"
                                     />
                             <input:CheckBox Text="A. Griezmann"
                                     TextColor="Black"
@@ -114,6 +119,7 @@
                             <input:CheckBox Text="P. Couthinho"
                                     TextColor="Black"
                                     x:Name="c3"
+                                            AutomationId="q3c"
                                     CheckChanged="C3_CheckChanged"/>
                         </StackLayout>
 
@@ -142,6 +148,7 @@
                                     TextColor="Black"
                                     x:Name="c4"
                                     CheckChanged="C4_CheckChanged"
+                                            AutomationId="q4c"
                                     />
                             <input:CheckBox Text="Josep Maria Bartomeu"
                                     TextColor="Black"
@@ -150,6 +157,7 @@
                             <input:CheckBox Text="Lionel Messi"
                                     TextColor="Black"
                                     x:Name="w4"
+                                            AutomationId="q4w"
                                     CheckChanged="W4_CheckChanged"/>
                         </StackLayout>
 
@@ -178,6 +186,7 @@
                                     TextColor="Black"
                                     x:Name="c5"
                                     CheckChanged="C5_CheckChanged"
+                                            AutomationId="q5c"
                                     />
                             <input:CheckBox Text="Louis van Gaal"
                                     TextColor="Black"
@@ -186,6 +195,7 @@
                             <input:CheckBox Text="Bobby Robson"
                                     TextColor="Black"
                                     x:Name="w5"
+                                            AutomationId="q5w"
                                     CheckChanged="W5_CheckChanged"/>
                         </StackLayout>
 
@@ -214,10 +224,12 @@
                                     TextColor="Black"
                                     x:Name="w6"
                                     CheckChanged="W6_CheckChanged"
+                                            AutomationId="q6w"
                                     />
                             <input:CheckBox Text="Joan Laporta"
                                     TextColor="Black"
                                     x:Name="c6"
+                                            AutomationId="q6c"
                                     CheckChanged="C6_CheckChanged"/>
                             <input:CheckBox Text="Josep Maria Bartomeu"
                                     TextColor="Black"
@@ -250,10 +262,12 @@
                                     TextColor="Black"
                                     x:Name="w7"
                                     CheckChanged="W7_CheckChanged"
+                                            AutomationId="q7w"
                                     />
                             <input:CheckBox Text="Xavi Hernandez"
                                     TextColor="Black"
                                     x:Name="c7"
+                                            AutomationId="q7c"
                                     CheckChanged="C7_CheckChanged"/>
                             <input:CheckBox Text="Lionel Messi"
                                     TextColor="Black"
@@ -285,6 +299,7 @@
                             <input:CheckBox Text="Joan Laporta" 
                                     TextColor="Black"
                                     x:Name="w8"
+                                            AutomationId="q8w"
                                     CheckChanged="w8_CheckChanged"
                                     />
                             <input:CheckBox Text="Joan Gamper"
@@ -294,6 +309,7 @@
                             <input:CheckBox Text="Josep Lluis Nunez"
                                     TextColor="Black"
                                     x:Name="c8"
+                                            AutomationId="q8c"
                                     CheckChanged="c8_CheckChanged"/>
                         </StackLayout>
 
@@ -321,11 +337,13 @@
                             <input:CheckBox Text="2009/2010" 
                                     TextColor="Black"
                                     x:Name="w9"
+                                            AutomationId="q9w"
                                     CheckChanged="w9_CheckChanged"
                                     />
                             <input:CheckBox Text="2010/2011"
                                     TextColor="Black"
                                     x:Name="c9"
+                                            AutomationId="q9c"
                                     CheckChanged="c9_CheckChanged"/>
                             <input:CheckBox Text="2012/2013"
                                     TextColor="Black"
@@ -357,6 +375,7 @@
                             <input:CheckBox Text="Ronald Koeman" 
                                     TextColor="Black"
                                     x:Name="w10"
+                                            AutomationId="q10w"
                                     CheckChanged="w10_CheckChanged"
                                     />
                             <input:CheckBox Text="Henrik Larsson"
@@ -366,6 +385,7 @@
                             <input:CheckBox Text="Juliano Belletti"
                                     TextColor="Black"
                                     x:Name="c10"
+                                            AutomationId="q10c"
                                     CheckChanged="c10_CheckChanged"/>
                         </StackLayout>
 
@@ -406,7 +426,8 @@
                    IsVisible="False"
                    x:Name="nicknameEntry"
                     VerticalOptions="Center"
-                    Grid.Column="1"/>
+                    Grid.Column="1"
+                                    AutomationId="NicnameEntry"/>
                             </Grid>
                         </StackLayout>
                     </Frame>
@@ -418,7 +439,8 @@
                         BorderColor="White"
                         BorderWidth="5"
                         CornerRadius="5"
-                        x:Name="QS1"/>
+                        x:Name="QS1"
+                        AutomationId="QAC1"/>
                 <Button Text="Sprawdź odpowiedzi"
                                 Clicked="QuizSolved2" 
                         Margin="10,0,10,5"
@@ -427,7 +449,8 @@
                         BorderWidth="5"
                         CornerRadius="5"
                         IsVisible="False"
-                        x:Name="QS2"/>
+                        x:Name="QS2"
+                        AutomationId="QAC2"/>
 
             </StackLayout>
         </ScrollView>

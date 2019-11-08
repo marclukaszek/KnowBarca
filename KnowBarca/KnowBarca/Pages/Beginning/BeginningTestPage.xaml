@@ -6,7 +6,8 @@
              xmlns:input="clr-namespace:Plugin.InputKit.Shared.Controls;assembly=Plugin.InputKit"
              mc:Ignorable="d"
              x:Class="KnowBarca.Pages.BeginningTestPage"
-             NavigationPage.HasNavigationBar="False">
+             NavigationPage.HasNavigationBar="False"
+             AutomationId="BeginningTestPage">
     <Grid>
         <Image x:Name="background"
            Aspect="Fill" />
@@ -53,7 +54,8 @@
                         <Button Text="Następne pytanie ->"
                                 FontAttributes="Bold"
                         HorizontalOptions="End"
-                        Clicked="StartPyt2_Clicked"/>
+                        Clicked="StartPyt2_Clicked"
+                                AutomationId="Bq2n"/>
                     </StackLayout>
                 </ScrollView>
             </Frame>
@@ -101,7 +103,8 @@
                         <Button Text="Następne pytanie ->"
                                 FontAttributes="Bold"
                         HorizontalOptions="End"
-                        Clicked="StartPyt3_Clicked"/>
+                        Clicked="StartPyt3_Clicked"
+                                AutomationId="Bq3n"/>
                     </StackLayout>
                 </ScrollView>
             </Frame>

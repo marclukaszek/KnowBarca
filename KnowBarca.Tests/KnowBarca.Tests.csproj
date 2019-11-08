@@ -36,8 +36,13 @@
   <ItemGroup />
   <ItemGroup>
     <Compile Include="PageBase.cs" />
+    <Compile Include="Pages\AlertBox.cs" />
     <Compile Include="Pages\Author\AuthorPage.cs" />
+    <Compile Include="Pages\History\Beginning\BeginningPage.cs" />
+    <Compile Include="Pages\History\Beginning\BeginningPageCorrect.cs" />
+    <Compile Include="Pages\History\Beginning\BeginningPageTest.cs" />
     <Compile Include="Pages\History\HistoryPage.cs" />
+    <Compile Include="Pages\History\Stadium\StadiumPage.cs" />
     <Compile Include="Pages\MainPage.cs" />
     <Compile Include="Pages\PageContainer.cs" />
     <Compile Include="Pages\Quiz\QuizPage.cs" />

@@ -5,7 +5,8 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="KnowBarca.Pages.BeginningCorrectPage"
-             NavigationPage.HasNavigationBar="False">
+             NavigationPage.HasNavigationBar="False"
+             AutomationId="BeginningPageCorrect">
     <Grid>
         <Image x:Name="background"
            Aspect="Fill" />
@@ -40,6 +41,7 @@
                        TextColor="Black"
                                 FontAttributes="Bold"
                         Clicked="StartStadiumPage_Clicked"
+                                AutomationId="GoStadiumButton"
                        ></Button>
                     </StackLayout>
                 </ScrollView>

@@ -59,7 +59,8 @@
                                                TextColor="Black"
                                                VerticalOptions="Center"
                                                HorizontalOptions="Center"
-                                               IsEnabled="False" />
+                                               IsEnabled="False" 
+                                               AutomationId="SBNick"/>
                                     </ViewCell>
                                 </DataTemplate>
                             </ListView.ItemTemplate>
@@ -72,7 +73,8 @@
                                                TextColor="Black"
                                                IsEnabled="False"
                                                VerticalOptions="Center"
-                                               HorizontalOptions="Center"/>
+                                               HorizontalOptions="Center"
+                                               AutomationId="SBPoint"/>
                                     </ViewCell>
                                 </DataTemplate>
                             </ListView.ItemTemplate>
